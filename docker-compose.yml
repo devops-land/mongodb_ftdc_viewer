@@ -1,0 +1,55 @@
+services:
+  influxdb:
+    image: influxdb:latest
+    ports:
+      - "8086:8086"
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=password
+      - DOCKER_INFLUXDB_INIT_ORG=my-org
+      - DOCKER_INFLUXDB_INIT_BUCKET=ftdc
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=ftdc
+    volumes:
+      - ${INFLUX_DB_DATA_DIRECTORY}:/var/lib/influxdb
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8086/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3001:3000"
+    environment:
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_DISABLE_LOGIN_FORM=false
+    links:
+      - influxdb
+    volumes:
+      - ./grafana/datasources.yaml:/etc/grafana/provisioning/datasources/datasources.yaml
+      - ./grafana/main.yaml:/etc/grafana/provisioning/dashboards/main.yaml
+      - ./grafana/dashboards/:/etc/grafana/provisioning/dashboards/
+
+  ftdc-processor:
+    build: ./ftdc_processor
+    volumes:
+      - ${INPUT_DIR}:/diagnostic.data
+      - ./metrics_to_get.txt:/app/metrics_to_get.txt
+    depends_on:
+      influxdb:
+        condition: service_healthy
+    command: >
+      ./ftdc_processor
+       --input-dir /diagnostic.data
+       --metrics-include-file /app/metrics_to_get.txt
+       --influx-url http://influxdb:8086
+       --influx-token ftdc
+       --influx-org my-org
+       --influx-bucket ftdc
+       --parallel ${PARALLEL}
+       --batch-size ${BATCH_SIZE}
+volumes:
+  influxdb-data:

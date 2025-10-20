@@ -1,0 +1,2150 @@
+serverStatus.wiredTiger.cursor.cursor reopen calls that return an error
+serverStatus.wiredTiger.lock.schema lock acquisitions
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of key/value pairs
+systemMetrics.netstat.TcpExt:IPReversePathFilter
+systemMetrics.netstat.TcpExt:TCPAORequired
+serverStatus.transactions.currentActive
+serverStatus.wiredTiger.cache.eviction server skips trees that disable eviction
+serverStatus.wiredTiger.cache.pages selected for eviction unable to be evicted because of active children on an internal page
+replSetGetStatus.ok
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table reads missed
+systemMetrics.netstat.TcpExt:TCPFastOpenCookieReqd
+serverStatus.tcmalloc.tcmalloc.aggressive_memory_decommit
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent handles walked
+serverStatus.metrics.getLastError.default.num
+replSetGetStatus.members.1.electionDate
+serverStatus.wiredTiger.cache.eviction gave up due to detecting a disk value without a timestamp behind the last update on the chain
+serverStatus.wiredTiger.connection.total read I/Os
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cache cursors reuse count
+systemMetrics.netstat.TcpExt:TCPDeferAcceptDrop
+serverStatus.wiredTiger.lock.checkpoint lock acquisitions
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum internal page size
+systemMetrics.mounts./dev.free
+serverStatus.metrics.aggStageCounters.$redact
+serverStatus.metrics.operation.temporarilyUnavailableErrorsEscaped
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateAdd
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Leaf pages currently in cache
+serverStatus.wiredTiger.cursor.cursor next calls that skip greater than or equal to 100 entries
+serverStatus.wiredTiger.transaction.transaction checkpoint prepare max time (msecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$log
+serverStatus.metrics.operatorCounters.windowAccumulators.$reduce
+systemMetrics.netstat.TcpExt:TWKilled
+serverStatus.asserts.tripwire
+serverStatus.wiredTiger.data-handle.session dhandles swept
+serverStatus.metrics.operatorCounters.windowAccumulators.$regexFindAll
+systemMetrics.cpu.idle_ms
+systemMetrics.disks.sdb.io_in_progress
+serverStatus.wiredTiger.block-cache.total blocks
+serverStatus.metrics.cursor.totalOpened.lessThan1Minute
+serverStatus.metrics.operatorCounters.windowAccumulators.$geoIntersects
+systemMetrics.disks.xvdc.read_sectors
+serverStatus.wiredTiger.log.slot transitions unable to find free slot
+serverStatus.wiredTiger.transaction.rollback to stable inconsistent checkpoint
+serverStatus.metrics.operatorCounters.windowAccumulators.$atan
+serverStatus.wiredTiger.cache.forced eviction - pages selected because of too many deleted items count
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks gave up because they saw too many pages and found too few candidates
+systemMetrics.netstat.TcpExt:TCPHPAcks
+serverStatus.electionMetrics.electionTimeout.successful
+serverStatus.wiredTiger.cache.internal pages split during eviction
+serverStatus.metrics.operatorCounters.windowAccumulators.$near
+replSetGetStatus.lastStableRecoveryTimestamp.inc
+systemMetrics.netstat.TcpExt:LockDroppedIcmps
+serverStatus.asserts.warning
+serverStatus.wiredTiger.block-manager.bytes read via memory map API
+serverStatus.metrics.aggStageCounters.$_internalSplitPipeline
+serverStatus.metrics.operatorCounters.windowAccumulators.$objectToArray
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.remove key bytes removed
+serverStatus.wiredTiger.cache.hazard pointer blocked page eviction
+serverStatus.metrics.operation.numConnectionNetworkTimeouts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages histogram - 0-9
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated newest stop transaction ID
+serverStatus.opcountersRepl.update
+serverStatus.shardSplits.totalCommittedDurationWithoutCatchupMillis
+serverStatus.wiredTiger.transaction.transaction walk of concurrent sessions
+serverStatus.metrics.aggStageCounters.$count
+serverStatus.metrics.operatorCounters.windowAccumulators.$not
+serverStatus.metrics.query.queryFramework.find.sbe
+serverStatus.wiredTiger.cursor.cursor bounds next early exit
+serverStatus.wiredTiger.reconciliation.records written including a stop durable timestamp
+serverStatus.metrics.repl.waiters.numAutoReconfigsForRemovalOfNewlyAddedFields
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Number of pages never visited by eviction server
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.race to read prepared update retry
+serverStatus.metrics.operatorCounters.windowAccumulators.$isNumber
+serverStatus.tcmalloc.tcmalloc.release_rate
+serverStatus.metrics.document.returned
+serverStatus.metrics.operatorCounters.windowAccumulators.$dayOfMonth
+serverStatus.wiredTiger.lock.metadata lock acquisitions
+serverStatus.wiredTiger.transaction.prepared transactions
+serverStatus.metrics.operatorCounters.windowAccumulators.$exp
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.nestedLoopJoin
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree compact pages reviewed
+serverStatus.wiredTiger.block-cache.number of put bypasses on checkpoint I/O
+serverStatus.metrics.aggStageCounters.$listSessions
+replSetGetStatus.start
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of entries skipped to position the history store cursor
+systemMetrics.netstat.IpExt:InTruncatedPkts
+serverStatus.wiredTiger.cursor.cursor prev calls that skip due to a globally visible history store tombstone
+serverStatus.metrics.cursor.totalOpened.pinned
+serverStatus.twoPhaseCommitCoordinator.currentInSteps.writingDecision
+systemMetrics.netstat.TcpExt:TCPDSACKRecvSegs
+serverStatus.opcounters.getmore
+serverStatus.wiredTiger.block-cache.time sleeping to remove block (usecs)
+serverStatus.metrics.aggStageCounters.$_internalShardServerInfo
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one start timestamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable keys restored
+systemMetrics.netstat.TcpExt:TCPMD5Unexpected
+systemMetrics.disks.xvdb.writes_merged
+serverStatus.metrics.operatorCounters.windowAccumulators.$toInt
+serverStatus.network.serviceExecutors.fixed.clientsInTotal
+serverStatus.twoPhaseCommitCoordinator.totalCreated
+serverStatus.wiredTiger.capacity.time waiting during logging (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalFleEq
+replSetGetStatus.members.3.optimeDurableDate
+systemMetrics.netstat.TcpExt:TCPSpuriousRtxHostQueues
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated prepare
+serverStatus.metrics.aggStageCounters.$listSampledQueries
+systemMetrics.netstat.TcpExt:TCPACKSkippedSynRecv
+serverStatus.batchedDeletes.batches
+serverStatus.opLatencies.writes.ops
+serverStatus.readConcernCounters.transactionOps.noneInfo.CWRC.local
+serverStatus.tcmalloc.tcmalloc.pageheap_total_decommit_bytes
+serverStatus.wiredTiger.cache.eviction server skips metadata pages with history
+serverStatus.wiredTiger.checkpoint-cleanup.pages visited
+serverStatus.wiredTiger.transaction.transaction checkpoint scrub time (msecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$bottom
+serverStatus.metrics.operatorCounters.windowAccumulators.$ltrim
+replSetGetStatus.members.3.health
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation to remove an update
+serverStatus.logicalSessionRecordCache.lastSessionsCollectionJobDurationMillis
+serverStatus.tcmalloc.tcmalloc.central_cache_free_bytes
+serverStatus.metrics.operatorCounters.windowAccumulators.$min
+serverStatus.metrics.operatorCounters.windowAccumulators.$minN
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.file allocation unit size
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.row-store leaf pages
+systemMetrics.disks.xvda.reads
+serverStatus.wiredTiger.block-cache.cached bytes updated
+serverStatus.wiredTiger.cursor.cursor bounds prev early exit
+serverStatus.metrics.repl.waiters.opTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum leaf page value size
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bulk loaded cursor insert calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of times overflow removed value is read
+serverStatus.electionMetrics.stepUpCmd.called
+serverStatus.globalLock.activeClients.total
+serverStatus.wiredTiger.lock.metadata lock internal thread wait time (usecs)
+systemMetrics.mounts./dev/shm.available
+serverStatus.wiredTiger.cache.eviction currently operating in aggressive mode
+serverStatus.wiredTiger.cache.page written requiring history store records
+serverStatus.metrics.operatorCounters.windowAccumulators.$type
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages histogram - 10-31
+serverStatus.logicalSessionRecordCache.sessionCatalogSize
+serverStatus.metrics.operatorCounters.windowAccumulators.$atanh
+serverStatus.metrics.operatorCounters.windowAccumulators.$size
+serverStatus.metrics.repl.waiters.failures
+serverStatus.locks.Database.acquireCount.w
+serverStatus.wiredTiger.capacity.bytes written for checkpoint
+serverStatus.metrics.operatorCounters.windowAccumulators.$cmp
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitsAnySet
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.On-disk page image sizes smaller than a single allocation unit
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.internal page multi-block writes
+systemMetrics.netstat.TcpExt:TCPAbortOnClose
+systemMetrics.netstat.Ip:InAddrErrors
+serverStatus.indexBuilds.phases.processConstraintsViolatonTableOnCommit
+serverStatus.wiredTiger.perf.operation read latency histogram (bucket 4) - 1000-9999us
+serverStatus.wiredTiger.session.table compact running
+serverStatus.metrics.aggStageCounters.$_analyzeShardKeyReadWriteDistribution
+replSetGetStatus.members.2._id
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable history store records with stop timestamps older than newer records
+systemMetrics.disks.sda.write_sectors
+systemMetrics.mounts./dev/termination-log.capacity
+serverStatus.logicalSessionRecordCache.transactionReaperJobCount
+replSetGetStatus.writeMajorityCount
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.file magic number
+serverStatus.globalLock.currentQueue.readers
+serverStatus.wiredTiger.cache.eviction walks abandoned
+systemMetrics.netstat.TcpExt:EmbryonicRsts
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.indexedLoopJoin
+serverStatus.opcountersRepl.query
+serverStatus.wiredTiger.cache.forced eviction - history store pages selected while session has history store cursor open
+serverStatus.wiredTiger.concurrentTransactions.monitor.removedFromQueue
+serverStatus.metrics.operatorCounters.windowAccumulators.$push
+replSetGetStatus.optimes.lastCommittedOpTime.ts.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated newest start durable timestamp
+systemMetrics.netstat.TcpExt:TCPSackFailures
+systemMetrics.netstat.IpExt:InECT1Pkts
+serverStatus.wiredTiger.session.table compact failed calls due to cache pressure
+serverStatus.metrics.aggStageCounters.$group
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store fixed-size leaf pages
+systemMetrics.disks.sdb.io_time_ms
+serverStatus.readPreferenceCounters.executedOnSecondary.tagged.internal
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages visited
+serverStatus.indexBuilds.killedDueToInsufficientDiskSpace
+serverStatus.wiredTiger.cursor.cursor compare calls that return an error
+serverStatus.metrics.operatorCounters.windowAccumulators.$nor
+serverStatus.connections.exhaustHello
+serverStatus.wiredTiger.cache.pages seen by eviction walk that are already queued
+replSetGetStatus.optimes.durableOpTime.t
+replSetGetStatus.members.2.optime.ts.inc
+serverStatus.wiredTiger.block-cache.number of bypasses because no-write-allocate setting was on
+serverStatus.wiredTiger.reconciliation.pages written including at least one start timestamp
+serverStatus.metrics.aggStageCounters.$replaceWith
+serverStatus.metrics.queryExecutor.scanned
+replSetGetStatus.members.3.configVersion
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written requiring in-memory restoration
+serverStatus.metrics.aggStageCounters.$_unpackBucket
+serverStatus.metrics.operatorCounters.windowAccumulators.$subtract
+serverStatus.metrics.operatorCounters.windowAccumulators.$covariancePop
+replSetGetStatus.members.2.optime.t
+serverStatus.security.authentication.totalAuthenticationTimeMicros
+serverStatus.tenantMigrations.totalMigrationDonationsCommitted
+replSetGetStatus.members.3.lastDurableWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table insert calls that returned restart
+serverStatus.batchedDeletes.docs
+serverStatus.wiredTiger.capacity.background fsync file handles synced
+serverStatus.metrics.operatorCounters.windowAccumulators.$count
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree clean tree checkpoint expiration time
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.data source pages selected for eviction unable to be evicted
+systemMetrics.netstat.TcpExt:TCPMigrateReqSuccess
+serverStatus.wiredTiger.cache.eviction walks reached end of tree
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 4
+serverStatus.twoPhaseCommitCoordinator.totalAbortedTwoPhaseCommit
+serverStatus.metrics.aggStageCounters.$changeStreamSplitLargeEvent
+systemMetrics.netstat.TcpExt:TCPTimeouts
+serverStatus.network.compression.zlib.compressor.bytesIn
+serverStatus.network.compression.zlib.decompressor.bytesIn
+serverStatus.tcmalloc.tcmalloc.spinlock_total_delay_ns
+serverStatus.transactions.currentOpen
+serverStatus.wiredTiger.cursor.cursor remove key bytes removed
+serverStatus.wiredTiger.lock.checkpoint lock internal thread wait time (usecs)
+serverStatus.metrics.aggStageCounters.$facet
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor cache calls that return an error
+serverStatus.network.listenerProcessingTime.durationMicros
+serverStatus.metrics.query.queryFramework.aggregate.sbeHybrid
+serverStatus.metrics.repl.network.oplogGetMoresProcessed.num
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor modify calls that return an error
+serverStatus.wiredTiger.concurrentTransactions.monitor.timesIncreased
+serverStatus.metrics.aggStageCounters.$addFields
+serverStatus.opLatencies.commands.queryableEncryptionLatencyMicros
+serverStatus.metrics.operatorCounters.windowAccumulators.$const
+systemMetrics.netstat.TcpExt:TCPAutoCorking
+serverStatus.wiredTiger.transaction.Number of prepared updates repeated on the same key
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalTimeQueuedMicros
+serverStatus.metrics.query.deleteManyCount
+serverStatus.metrics.repl.waiters.failedAttempts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages read into cache after truncate
+systemMetrics.netstat.IpExt:InNoECTPkts
+serverStatus.opLatencies.writes.queryableEncryptionLatencyMicros
+serverStatus.security.authentication.mechanisms.SCRAM-SHA-256.authenticate.successful
+serverStatus.wiredTiger.cursor.bulk cursor count
+serverStatus.metrics.operatorCounters.windowAccumulators.$locf
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.file bytes available for reuse
+systemMetrics.netstat.TcpExt:TCPAbortOnLinger
+systemMetrics.netstat.TcpExt:TCPWinProbe
+serverStatus.flowControl.isLaggedCount
+serverStatus.repl.lastWrite.lastWriteDate.ts.inc
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalAmountIncreased
+serverStatus.wiredTiger.transaction.transactions committed
+serverStatus.metrics.operatorCounters.windowAccumulators.$lte
+serverStatus.locks.FeatureCompatibilityVersion.acquireCount.r
+serverStatus.wiredTiger.cache.tracked bytes belonging to internal pages in the cache
+serverStatus.metrics.aggStageCounters.$_internalBoundedSort
+serverStatus.metrics.operatorCounters.windowAccumulators.$getField
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated oldest start timestamp
+serverStatus.internalTransactions.retriedTransactions
+serverStatus.wiredTiger.cursor.cached cursor count
+serverStatus.wiredTiger.concurrentTransactions.monitor.immediatePriorityAdmissionsCount
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateToParts
+systemMetrics.netstat.TcpExt:TCPAbortOnTimeout
+replSetGetStatus.writableVotingMembersCount
+serverStatus.wiredTiger.cache.multi-block reconciliation blocked whilst checkpoint is running
+serverStatus.wiredTiger.lock.durable timestamp queue write lock acquisitions
+serverStatus.wiredTiger.log.slot join calls yielded
+serverStatus.indexBulkBuilder.memUsage
+serverStatus.opLatencies.reads.ops
+serverStatus.wiredTiger.capacity.time waiting during checkpoint (usecs)
+serverStatus.wiredTiger.thread-yield.application thread time evicting (usecs)
+serverStatus.wiredTiger.thread-yield.page acquire eviction blocked
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages read into cache after truncate in prepare state
+serverStatus.wiredTiger.cache.pages removed from the ordinary queue to be queued for urgent eviction
+serverStatus.metrics.aggStageCounters.$queue
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor close calls that return an error
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.remove calls
+serverStatus.wiredTiger.cache.application threads page read from disk to cache count
+serverStatus.wiredTiger.cache.history store table insert calls
+serverStatus.wiredTiger.cache.history store table truncations to remove an update that would have happened in non-dryrun mode
+systemMetrics.netstat.TcpExt:TW
+systemMetrics.netstat.TcpExt:TCPSackMerged
+serverStatus.wiredTiger.cache.forced eviction - pages selected unable to be evicted count
+serverStatus.wiredTiger.session.table rename successful calls
+serverStatus.wiredTiger.transaction.transaction begins
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent handles skipped
+serverStatus.metrics.aggStageCounters.$_backupFile
+serverStatus.metrics.operatorCounters.windowAccumulators.$isoDayOfWeek
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spillToDiskBytes
+replSetGetStatus.members.0.self
+serverStatus.mirroredReads.sent
+serverStatus.wiredTiger.transaction.set timestamp durable calls
+replSetGetStatus.members.2.optimeDurableDate
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages read into cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.compressed pages read
+systemMetrics.memory.SwapCached_kb
+serverStatus.internalTransactions.started
+serverStatus.metrics.operatorCounters.windowAccumulators.$sum
+replSetGetStatus.members.3.uptime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Average difference between current eviction generation when the page was last considered
+serverStatus.wiredTiger.lock.table lock internal thread time waiting for the table lock (usecs)
+serverStatus.wiredTiger.transaction.rollback to stable keys that would have been removed in non-dryrun mode
+serverStatus.readConcernCounters.nonTransactionOps.noneInfo.implicitDefault.available
+serverStatus.metrics.operatorCounters.windowAccumulators.$toUpper
+serverStatus.metrics.operatorCounters.windowAccumulators.$nearSphere
+serverStatus.metrics.repl.apply.batches.totalMillis
+systemMetrics.disks.xvdb.write_sectors
+serverStatus.globalLock.totalTime
+serverStatus.wiredTiger.cursor.cursor bulk loaded cursor insert calls
+serverStatus.wiredTiger.log.records processed by log scan
+serverStatus.metrics.operatorCounters.windowAccumulators.$unsetField
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filter hits
+serverStatus.queryAnalyzers.totalSampledWritesCount
+serverStatus.wiredTiger.cursor.cursor next random calls that return an error
+serverStatus.metrics.cursor.totalOpened.lessThan5Seconds
+serverStatus.metrics.operatorCounters.windowAccumulators.$linearFill
+replSetGetStatus.members.1.optimeDurable.t
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor prev calls that skip greater than or equal to 100 entries
+systemMetrics.netstat.TcpExt:TCPRcvCoalesce
+serverStatus.globalLock.activeClients.writers
+serverStatus.wiredTiger.perf.operation read latency histogram (bucket 5) - 10000us+
+serverStatus.metrics.document.updated
+replSetGetStatus.members.3.syncSourceId
+serverStatus.readConcernCounters.nonTransactionOps.majority.withClusterTime
+serverStatus.tenantMigrations.currentMigrationsDonating
+serverStatus.wiredTiger.cache.eviction walk target strategy both clean and dirty pages
+serverStatus.wiredTiger.session.table compact failed calls
+systemMetrics.memory.MemAvailable_kb
+serverStatus.locks.FeatureCompatibilityVersion.acquireCount.w
+serverStatus.wiredTiger.cursor.cursor search history store calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bytes read into cache
+systemMetrics.disks.xvda.io_in_progress
+serverStatus.wiredTiger.cache.unmodified pages evicted
+serverStatus.metrics.repl.waiters.userOperationsKilled
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 16
+serverStatus.tcmalloc.tcmalloc.max_total_thread_cache_bytes
+serverStatus.wiredTiger.cache.eviction worker thread created
+serverStatus.wiredTiger.cache.forced eviction - do not retry count to evict pages selected to evict during reconciliation
+serverStatus.wiredTiger.connection.number of sessions without a sweep for 60+ minutes
+systemMetrics.netstat.TcpExt:TCPAckCompressed
+serverStatus.opLatencies.writes.latency
+serverStatus.wiredTiger.block-manager.bytes written
+serverStatus.wiredTiger.transaction.transaction checkpoint min time (msecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$toDecimal
+serverStatus.wiredTiger.cache.files with new eviction walks started
+serverStatus.wiredTiger.reconciliation.page reconciliation calls that resulted in values with transaction ids
+serverStatus.metrics.aggStageCounters.$limit
+serverStatus.metrics.repl.waiters.attemptsToBecomeSecondary
+systemMetrics.vmstat.pgfault
+serverStatus.wiredTiger.cache.checkpoint of history store file blocked non-history store page eviction
+serverStatus.wiredTiger.lock.table write lock acquisitions
+serverStatus.uptimeEstimate
+serverStatus.opcountersRepl.command
+serverStatus.wiredTiger.cache.overflow pages read into cache
+serverStatus.wiredTiger.cursor.cursor prev calls that skip less than 100 entries
+systemMetrics.netstat.TcpExt:TCPTimeWaitOverflow
+serverStatus.wiredTiger.autocommit.retries for update operations
+serverStatus.wiredTiger.log.log write operations
+serverStatus.wiredTiger.transaction.transaction checkpoint currently running for history store file
+serverStatus.metrics.operatorCounters.windowAccumulators.$cos
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable keys that would have been removed in non-dryrun mode
+serverStatus.wiredTiger.perf.operation write latency histogram (bucket 3) - 500-999us
+replSetGetStatus.optimes.appliedOpTime.t
+local.oplog.rs.stats.storageStats.totalIndexSize
+serverStatus.extra_info.page_reclaims
+serverStatus.readConcernCounters.nonTransactionOps.none
+serverStatus.wiredTiger.cursor.cursor insert check calls that return an error
+serverStatus.metrics.cursor.totalOpened.lessThan10Minutes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.retries for readonly operations
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages added for eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.dictionary matches
+systemMetrics.netstat.TcpExt:SyncookiesSent
+systemMetrics.netstat.Tcp:OutRsts
+serverStatus.wiredTiger.cache.eviction walk target strategy only clean pages
+serverStatus.metrics.aggStageCounters.$indexStats
+serverStatus.metrics.operatorCounters.windowAccumulators.$round
+replSetGetStatus.date
+serverStatus.metrics.operatorCounters.windowAccumulators.$map
+serverStatus.metrics.operatorCounters.windowAccumulators.$ne
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.prev calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages deleted
+serverStatus.wiredTiger.block-cache.evicted blocks
+serverStatus.wiredTiger.transaction.rollback to stable restored tombstones from history store
+replSetGetStatus.members.0.uptime
+replSetGetStatus.members.1.optime.ts
+serverStatus.wiredTiger.log.log flush operations
+systemMetrics.netstat.TcpExt:TCPPartialUndo
+systemMetrics.netstat.Ip:InHdrErrors
+serverStatus.internalTransactions.succeeded
+serverStatus.globalLock.activeClients.readers
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated newest stop durable timestamp
+serverStatus.catalogStats.csfle
+serverStatus.metrics.aggStageCounters.$densify
+serverStatus.wiredTiger.cache.eviction gave up due to no progress being made
+serverStatus.wiredTiger.cache.forced eviction - history store pages failed to evict while session has history store cursor open
+serverStatus.wiredTiger.cache.forced eviction - pages selected because of a large number of updates to a single item
+serverStatus.wiredTiger.cache.pages queued for eviction post lru sorting
+serverStatus.wiredTiger.transaction.rollback to stable keys removed
+serverStatus.wiredTiger.transaction.rollback to stable tombstones from history store that would have been restored in non-dryrun mode
+serverStatus.metrics.repl.network.replSetUpdatePosition.num
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.sleep for LSM merge throttle
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree number of pages reconciled during checkpoint
+systemMetrics.disks.sdb.write_time_ms
+serverStatus.wiredTiger.cache.hazard pointer check calls
+systemMetrics.netstat.TcpExt:TCPBacklogDrop
+serverStatus.wiredTiger.cache.force re-tuning of eviction workers once in a while
+serverStatus.metrics.operatorCounters.windowAccumulators.$toLong
+serverStatus.metrics.operatorCounters.windowAccumulators.$exists
+systemMetrics.disks.xvdc.write_sectors
+serverStatus.wiredTiger.cache.eviction server skips pages that we do not want to evict
+systemMetrics.netstat.Ip:ForwDatagrams
+serverStatus.wiredTiger.session.table alter failed calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$switch
+serverStatus.wiredTiger.transaction.transaction checkpoints
+serverStatus.wiredTiger.snapshot-window-settings.min pinned timestamp.inc
+serverStatus.wiredTiger.cache.forced eviction - pages evicted that were dirty time (usecs)
+serverStatus.wiredTiger.log.busy returns attempting to switch slots
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamAddPostImage
+systemMetrics.mounts./sys/firmware.free
+serverStatus.catalogStats.views
+serverStatus.wiredTiger.cursor.cursor update calls that return an error
+serverStatus.wiredTiger.transaction.set timestamp durable updates
+serverStatus.metrics.commands.collMod.validator.total
+serverStatus.metrics.repl.waiters.count
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages removed
+systemMetrics.netstat.TcpExt:TCPDSACKIgnoredNoUndo
+serverStatus.wiredTiger.cache.application threads page read from disk to cache time (usecs)
+serverStatus.wiredTiger.cursor.cursor sweep cursors examined
+serverStatus.wiredTiger.session.flush_tier tables skipped due to no checkpoint
+serverStatus.wiredTiger.transaction.set timestamp stable updates
+local.oplog.rs.stats.storageStats.max
+serverStatus.wiredTiger.cursor.Total number of on-disk deleted pages skipped during tree walk
+serverStatus.wiredTiger.cursor.cursor update calls
+serverStatus.wiredTiger.reconciliation.maximum milliseconds spent in moving updates to the history store in a reconciliation
+systemMetrics.mounts./.available
+replSetGetStatus.members.1.lastHeartbeatRecv
+systemMetrics.netstat.TcpExt:TCPMTUPSuccess
+serverStatus.readConcernCounters.transactionOps.majority.withoutClusterTime
+serverStatus.repl.lastWrite.majorityOpTime.ts.inc
+serverStatus.wiredTiger.cache.maximum milliseconds spent at a single eviction
+serverStatus.metrics.operatorCounters.windowAccumulators.$cond
+serverStatus.metrics.operatorCounters.windowAccumulators.$meta
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.VLCS pages explicitly reconciled as empty
+serverStatus.electionMetrics.freezeTimeout.successful
+serverStatus.wiredTiger.cursor.cursor bounds comparisons performed
+serverStatus.wiredTiger.session.table rename failed calls
+serverStatus.wiredTiger.session.table salvage failed calls
+serverStatus.wiredTiger.transaction.rollback to stable updates that would have been removed from history store in non-dryrun mode
+serverStatus.wiredTiger.transaction.set timestamp oldest updates
+systemMetrics.mounts./etc/hostname.free
+systemMetrics.mounts./proc/acpi.free
+serverStatus.metrics.aggStageCounters.$_internalSearchMongotRemote
+serverStatus.wiredTiger.cache.bytes read into cache
+serverStatus.wiredTiger.lock.read timestamp queue write lock acquisitions
+serverStatus.wiredTiger.concurrentTransactions.monitor.queueLength
+serverStatus.metrics.commands.create.validator.total
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable sweeping history store keys
+serverStatus.wiredTiger.cache.pages evicted in parallel with checkpoint
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.sbeNumReads
+serverStatus.end
+serverStatus.network.numSlowSSLOperations
+serverStatus.shardSplits.totalAborted
+serverStatus.wiredTiger.cache.eviction server skips dirty pages during a running checkpoint
+serverStatus.wiredTiger.cache.eviction walk most recent sleeps for checkpoint handle gathering
+serverStatus.wiredTiger.session.flush_tier failed calls
+replSetGetStatus.members.1.optimeDurableDate
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.overflow keys on a multiblock row-store page blocked its eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one prepare
+serverStatus.wiredTiger.cursor.cursor bounds search near call repositioned cursor
+serverStatus.wiredTiger.cursor.cursor close calls that return an error
+replSetGetStatus.members.2.syncSourceId
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks started from root of tree
+systemMetrics.netstat.TcpExt:TCPSACKReorder
+systemMetrics.netstat.TcpExt:TCPDSACKUndo
+systemMetrics.netstat.TcpExt:TCPLostRetransmit
+systemMetrics.netstat.TcpExt:TCPACKSkippedChallenge
+serverStatus.transportSecurity.1.1
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 2) - 50-99ms
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable keys that would have been restored in non-dryrun mode
+systemMetrics.mounts./proc/keys.available
+serverStatus.transactions.totalPreparedThenCommitted
+serverStatus.wiredTiger.session.table compact passes
+serverStatus.metrics.cursor.totalOpened.lessThan30Seconds
+serverStatus.metrics.operatorCounters.windowAccumulators.$integral
+systemMetrics.netstat.Ip:OutTransmits
+serverStatus.wiredTiger.session.table verify successful calls
+serverStatus.metrics.abortExpiredTransactions.passes
+serverStatus.metrics.operatorCounters.windowAccumulators.$regexFind
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree compact pages skipped
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.multi-block reconciliation blocked whilst checkpoint is running
+systemMetrics.netstat.TcpExt:TCPPureAcks
+systemMetrics.netstat.Ip:InDelivers
+systemMetrics.disks.sdb.writes
+serverStatus.wiredTiger.perf.operation read latency histogram (bucket 3) - 500-999us
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.reset calls
+serverStatus.transactions.retriedCommandsCount
+serverStatus.metrics.aggStageCounters.$_internalUnpackBucket
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.blocks allocated
+systemMetrics.mounts./conf.free
+serverStatus.repl.userWriteBlockMode
+serverStatus.transactions.totalStarted
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.internal pages evicted
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.unmodified pages evicted
+serverStatus.tcmalloc.tcmalloc.transfer_cache_free_bytes
+serverStatus.metrics.operatorCounters.windowAccumulators.$log10
+serverStatus.metrics.query.planCacheTotalQueryShapes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Maximum page size seen
+systemMetrics.mounts./dev/termination-log.free
+serverStatus.opcounters.insert
+serverStatus.tcmalloc.tcmalloc.total_free_bytes
+serverStatus.metrics.operatorCounters.windowAccumulators.$atan2
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to detecting a tombstone without a timestamp ahead of the selected on disk update after validating the update chain
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a start timestamp
+systemMetrics.netstat.TcpExt:TCPSYNChallenge
+serverStatus.wiredTiger.cache.hazard pointer check entries walked
+serverStatus.metrics.operation.transactionTooLargeForCacheErrorsConvertedToWriteConflict
+serverStatus.metrics.operatorCounters.windowAccumulators.$strLenCP
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table reads
+serverStatus.wiredTiger.cache.pages queued for urgent eviction from history store due to high dirty content
+serverStatus.metrics.query.queryFramework.aggregate.classicOnly
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable skipping stable rle
+systemMetrics.netstat.TcpExt:PAWSActive
+serverStatus.opLatencies.transactions.latency
+serverStatus.wiredTiger.cursor.cursor reconfigure calls that return an error
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent time (msecs)
+serverStatus.metrics.query.updateDeleteManyDurationMaxMs
+replSetGetStatus.members.3._id
+serverStatus.locks.Global.acquireCount.w
+serverStatus.opcounters.query
+serverStatus.wiredTiger.data-handle.connection data handle size
+serverStatus.tcmalloc.tcmalloc.pageheap_committed_bytes
+serverStatus.wiredTiger.transaction.transaction checkpoint prepare currently running
+serverStatus.readConcernCounters.nonTransactionOps.noneInfo.CWRC.available
+serverStatus.wiredTiger.cache.the number of times reverse modify inserted to history store
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor reserve calls that return an error
+serverStatus.wiredTiger.block-cache.number of bypasses on get
+serverStatus.wiredTiger.cache.eviction worker thread evicting pages
+serverStatus.wiredTiger.transaction.transaction read timestamp of the oldest active reader
+serverStatus.metrics.aggStageCounters.$replaceRoot
+systemMetrics.start
+serverStatus.wiredTiger.connection.auto adjusting condition resets
+serverStatus.wiredTiger.log.slot unbuffered writes
+serverStatus.wiredTiger.session.table alter unchanged and skipped
+serverStatus.metrics.aggStageCounters.$_internalInhibitOptimization
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.checkpoint of history store file blocked non-history store page eviction
+systemMetrics.cpu.procs_running
+systemMetrics.disks.xvdc.write_time_ms
+serverStatus.wiredTiger.cache.pages read into cache
+systemMetrics.disks.xvdb.io_queued_ms
+serverStatus.metrics.operatorCounters.windowAccumulators.$ifNull
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages requested from the cache
+serverStatus.transportSecurity.1.2
+serverStatus.wiredTiger.transaction.transaction checkpoint max time (msecs)
+serverStatus.metrics.aggStageCounters.$listSearchIndexes
+serverStatus.metrics.repl.network.oplogGetMoresProcessed.totalMillis
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncations to remove an update that would have happened in non-dryrun mode
+systemMetrics.netstat.TcpExt:BusyPollRxPackets
+serverStatus.catalogStats.queryableEncryption
+serverStatus.wiredTiger.transaction.rollback to stable sweeping history store keys
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.overflow pages read into cache
+serverStatus.metrics.aggStageCounters.$_internalApplyOplogUpdate
+serverStatus.metrics.aggStageCounters.$searchBeta
+serverStatus.metrics.operatorCounters.windowAccumulators.$or
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamCheckResumability
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.retries for update operations
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor insert calls that return an error
+serverStatus.electionMetrics.numCatchUpsFailedWithReplSetAbortPrimaryCatchUpCmd
+serverStatus.wiredTiger.reconciliation.records written including a start durable timestamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation to remove range of updates due to an update without a timestamp on data page
+systemMetrics.memory.Active(anon)_kb
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent duration for gathering all handles (usecs)
+systemMetrics.netstat.TcpExt:TWRecycled
+serverStatus.logicalSessionRecordCache.lastSessionsCollectionJobTimestamp
+serverStatus.wiredTiger.connection.memory frees
+serverStatus.wiredTiger.reconciliation.records written including a prepare state
+serverStatus.metrics.aggStageCounters.$setWindowFields
+serverStatus.metrics.operatorCounters.windowAccumulators.$derivative
+serverStatus.wiredTiger.cache.internal pages queued for eviction
+serverStatus.wiredTiger.connection.hash bucket array size general
+serverStatus.wiredTiger.session.tiered operations scheduled
+serverStatus.metrics.aggStageCounters.$_internalReshardingOwnershipMatch
+systemMetrics.disks.xvda.writes
+serverStatus.metrics.operatorCounters.windowAccumulators.$let
+serverStatus.connections.rejected
+serverStatus.indexBulkBuilder.count
+serverStatus.wiredTiger.transaction.transaction checkpoint history store file duration (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$bottomN
+systemMetrics.disks.sdb.write_sectors
+serverStatus.wiredTiger.connection.number of sessions without a sweep for 5+ minutes
+serverStatus.wiredTiger.transaction.transaction range of timestamps pinned by the oldest timestamp
+systemMetrics.cpu.ctxt
+serverStatus.featureCompatibilityVersion.minor
+serverStatus.wiredTiger.cache.history store table truncations to remove an unstable update that would have happened in non-dryrun mode
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateSubtract
+replSetGetStatus.optimes.lastDurableWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.queries that could have benefited from a Bloom filter that did not exist
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.file major version number
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 6) - 1000ms+
+serverStatus.wiredTiger.session.table compact skipped as process would not reduce file size
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalKeyStringValue
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum tree depth
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.uncommitted truncate blocked page eviction
+serverStatus.wiredTiger.cache.eviction walks gave up because they saw too many pages and found too few candidates
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 3) - 100-249ms
+serverStatus.metrics.cursor.totalOpened
+serverStatus.metrics.operatorCounters.windowAccumulators.$filter
+systemMetrics.disks.xvdc.io_queued_ms
+serverStatus.wiredTiger.cursor.Total number of in-memory deleted pages skipped during tree walk
+systemMetrics.netstat.TcpExt:TCPLossProbes
+serverStatus.catalogStats.internalCollections
+serverStatus.wiredTiger.cursor.open cursor count
+serverStatus.wiredTiger.thread-state.active filesystem write calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree compact pages rewritten
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor next calls that skip greater than 1 and fewer than 100 entries
+systemMetrics.cpu.irq_ms
+systemMetrics.disks.xvda.write_sectors
+systemMetrics.disks.xvdb.io_in_progress
+serverStatus.wiredTiger.session.tiered operations dequeued and processed
+serverStatus.wiredTiger.concurrentTransactions.monitor.out
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalAmountDecreased
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.checkpoint blocked page eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.in-memory page splits
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.approximate byte size of timestamps in pages written
+systemMetrics.mounts./etc/resolv.conf.capacity
+serverStatus.electionMetrics.numCatchUpsAlreadyCaughtUp
+serverStatus.indexBulkBuilder.bytesSorted
+replSetGetStatus.members.1.configTerm
+systemMetrics.memory.Buffers_kb
+serverStatus.catalogStats.capped
+serverStatus.connections.available
+serverStatus.oplog.earliestOptime
+serverStatus.tcmalloc.tcmalloc.pageheap_reserve_count
+serverStatus.metrics.operatorCounters.windowAccumulators.$tsIncrement
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks started from saved location in tree
+serverStatus.wiredTiger.cache.eviction passes of a file
+replSetGetStatus.members.0.health
+replSetGetStatus.members.2.lastDurableWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable updates removed from history store
+systemMetrics.netstat.TcpExt:TCPLossProbeRecovery
+systemMetrics.netstat.TcpExt:TCPKeepAlive
+serverStatus.opcounters.command
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.internal page split blocked its eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated newest stop durable timestamp
+local.oplog.rs.stats.end
+systemMetrics.mounts./proc/keys.capacity
+serverStatus.wiredTiger.cursor.Total number of entries skipped to position the history store cursor
+serverStatus.metrics.operatorCounters.windowAccumulators.$concatArrays
+systemMetrics.netstat.TcpExt:TCPZeroWindowDrop
+serverStatus.opLatencies.commands.ops
+serverStatus.wiredTiger.cache.eviction server unable to reach eviction goal
+serverStatus.wiredTiger.cache.files with active eviction walks
+serverStatus.wiredTiger.transaction.transaction checkpoint stop timing stress active
+serverStatus.mem.resident
+serverStatus.metrics.aggStageCounters.$setVariableFromSubPipeline
+serverStatus.metrics.operation.transactionTooLargeForCacheErrors
+serverStatus.transportSecurity.1.0
+serverStatus.wiredTiger.cache.eviction server waiting for a leaf page
+serverStatus.wiredTiger.lock.dhandle read lock acquisitions
+serverStatus.metrics.aggStageCounters.$backupCursor
+serverStatus.metrics.document.deleted
+systemMetrics.netstat.IpExt:InMcastOctets
+serverStatus.readConcernCounters.transactionOps.majority.withClusterTime
+serverStatus.transactions.totalAborted
+serverStatus.wiredTiger.connection.memory re-allocations
+local.oplog.rs.stats.storageStats.totalSize
+systemMetrics.netstat.Tcp:RetransSegs
+systemMetrics.mounts./etc/hosts.free
+systemMetrics.mounts./dev/shm.capacity
+serverStatus.wiredTiger.cache.reverse splits skipped because of VLCS namespace gap restrictions
+serverStatus.wiredTiger.capacity.time waiting due to total capacity (usecs)
+serverStatus.wiredTiger.cursor.cursor operation restarted
+serverStatus.metrics.dotsAndDollarsFields.updates
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.hashLookupSpillToDiskBytes
+replSetGetStatus.optimes.readConcernMajorityOpTime.t
+replSetGetStatus.members.1._id
+serverStatus.electionMetrics.priorityTakeover.successful
+serverStatus.wiredTiger.cursor.cursor search calls
+serverStatus.wiredTiger.cursor.cursor update key and value bytes
+serverStatus.metrics.query.updateDeleteManyDurationTotalMs
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of entries skipped by cursor next calls
+systemMetrics.netstat.TcpExt:TCPRcvCollapsed
+serverStatus.wiredTiger.block-manager.number of times the region was remapped via write
+serverStatus.wiredTiger.cursor.cursor truncate calls
+systemMetrics.memory.Cached_kb
+systemMetrics.disks.xvda.writes_merged
+systemMetrics.mounts./sys/firmware.capacity
+serverStatus.wiredTiger.transaction.transaction checkpoint prepare total time (msecs)
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.recent modification of a page blocked its eviction
+systemMetrics.netstat.TcpExt:TCPSackShifted
+systemMetrics.netstat.TcpExt:TCPFastOpenBlackhole
+serverStatus.repl.lastWrite.lastWriteDate.ts
+serverStatus.wiredTiger.cache.bytes written from cache
+serverStatus.mem.virtual
+serverStatus.metrics.operatorCounters.windowAccumulators.$year
+replSetGetStatus.members.2.optime.ts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.next calls
+serverStatus.flowControl.sustainerRate
+serverStatus.twoPhaseCommitCoordinator.currentInSteps.writingParticipantList
+serverStatus.wiredTiger.cache.application threads page write from cache to disk time (usecs)
+serverStatus.wiredTiger.cursor.cursor bounds next called on an unpositioned cursor
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to detecting update chain entries without timestamps after the selected on disk update
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor update calls that return an error
+systemMetrics.netstat.TcpExt:TCPMD5NotFound
+serverStatus.network.tcpFastOpen.serverSupported
+serverStatus.wiredTiger.cache.eviction server evicting pages
+serverStatus.wiredTiger.transaction.set timestamp calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$range
+replSetGetStatus.members.1.uptime
+replSetGetStatus.members.1.configVersion
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Size of the root page
+systemMetrics.disks.xvdb.read_sectors
+serverStatus.transactions.totalPrepared
+serverStatus.transactions.totalPreparedThenAborted
+replSetGetStatus.members.2.uptime
+systemMetrics.netstat.TcpExt:TCPMemoryPressures
+serverStatus.repl.isWritablePrimary
+serverStatus.wiredTiger.thread-state.active filesystem fsync calls
+serverStatus.metrics.aggStageCounters.$unionWith
+serverStatus.metrics.diskSpaceMonitor.passes
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitAnd
+serverStatus.metrics.operatorCounters.windowAccumulators.$lastN
+replSetGetStatus.optimes.appliedOpTime.ts
+replSetGetStatus.members.3.optimeDurable.ts.inc
+serverStatus.oplog.earliestOptime.inc
+serverStatus.tcmalloc.tcmalloc.pageheap_scavenge_count
+serverStatus.wiredTiger.connection.total fsync I/Os
+serverStatus.wiredTiger.transaction.number of times overflow removed value is read
+serverStatus.wiredTiger.concurrentTransactions.monitor.processing
+serverStatus.metrics.repl.executor.queues.networkInProgress
+transportLayerStats.start
+systemMetrics.netstat.IpExt:OutMcastPkts
+serverStatus.wiredTiger.cache.forced eviction - pages evicted that were dirty count
+serverStatus.wiredTiger.reconciliation.fast-path pages deleted
+serverStatus.metrics.aggStageCounters.$set
+serverStatus.metrics.operatorCounters.windowAccumulators.$rank
+systemMetrics.disks.sda.writes_merged
+serverStatus.wiredTiger.block-manager.bytes written via memory map API
+serverStatus.wiredTiger.cache.bytes dirty in the cache cumulative
+serverStatus.wiredTiger.cursor.cursor prev calls that skip greater than or equal to 100 entries
+serverStatus.wiredTiger.reconciliation.pages written including at least one stop durable timestamp
+serverStatus.metrics.operatorCounters.windowAccumulators.$setUnion
+systemMetrics.disks.xvdc.reads_merged
+serverStatus.connections.current
+serverStatus.wiredTiger.cursor.cursor insert calls
+serverStatus.wiredTiger.log.slot joins yield time (usecs)
+serverStatus.wiredTiger.thread-yield.page reconciliation yielded due to child modification
+serverStatus.metrics.aggStageCounters.$merge
+systemMetrics.netstat.TcpExt:TCPHystartTrainCwnd
+serverStatus.metrics.cursor.moreThanOneBatch
+serverStatus.metrics.query.planCacheTotalSizeEstimateBytes
+replSetGetStatus.members.2.lastAppliedWallTime
+serverStatus.wiredTiger.cache.eviction gave up due to detecting a tombstone without a timestamp ahead of the selected on disk update
+serverStatus.wiredTiger.thread-yield.page delete rollback time sleeping for state change (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$binarySize
+serverStatus.metrics.operatorCounters.windowAccumulators.$expMovingAvg
+serverStatus.metrics.query.updateManyCount
+systemMetrics.netstat.TcpExt:DelayedACKLost
+local.oplog.rs.stats.storageStats.avgObjSize
+serverStatus.metrics.operation.scanAndOrder
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to needing to remove a record from the history store but checkpoint is running
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.reverse splits skipped because of VLCS namespace gap restrictions
+systemMetrics.netstat.Ip:ReasmFails
+serverStatus.extra_info.page_faults
+serverStatus.readConcernCounters.nonTransactionOps.available
+serverStatus.wiredTiger.cache.operations timed out waiting for space in cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page written failed to compress
+systemMetrics.mounts./proc/latency_stats.available
+serverStatus.wiredTiger.transaction.set timestamp stable calls
+systemMetrics.netstat.TcpExt:TCPMinTTLDrop
+serverStatus.opcountersRepl.delete
+serverStatus.wiredTiger.log.slot closures
+serverStatus.metrics.cursor.timedOut
+systemMetrics.netstat.Ip:FragOKs
+systemMetrics.disks.sdb.read_sectors
+serverStatus.wiredTiger.cache.recent modification of a page blocked its eviction
+serverStatus.metrics.aggStageCounters.$listCachedAndActiveUsers
+serverStatus.metrics.aggStageCounters.$match
+systemMetrics.netstat.IpExt:InOctets
+serverStatus.repl.lastWrite.majorityOpTime.t
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalTimeProcessingMicros
+serverStatus.metrics.query.planCache.sbe.misses
+systemMetrics.netstat.TcpExt:ListenDrops
+serverStatus.metrics.operatorCounters.windowAccumulators.$tanh
+serverStatus.metrics.operatorCounters.windowAccumulators.$topN
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filter pages read into cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.transaction checkpoints due to obsolete pages
+systemMetrics.cpu.softirq_ms
+serverStatus.wiredTiger.cache.forced eviction - pages evicted that were clean count
+serverStatus.wiredTiger.reconciliation.approximate byte size of timestamps in pages written
+serverStatus.wiredTiger.transaction.transactions rolled back
+serverStatus.metrics.operatorCounters.windowAccumulators.$regexMatch
+systemMetrics.netstat.TcpExt:TCPHystartTrainDetect
+serverStatus.indexStats.features.wildcard.accesses
+serverStatus.metrics.operatorCounters.windowAccumulators.$maxN
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spills
+replSetGetStatus.optimes.lastCommittedOpTime.t
+systemMetrics.cpu.guest_nice_ms
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.sbeMicros
+replSetGetStatus.members.1.pingMs
+serverStatus.network.physicalBytesOut
+serverStatus.wiredTiger.thread-yield.page access yielded due to prepare state change
+serverStatus.metrics.operatorCounters.windowAccumulators.$multiply
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.sleep for LSM checkpoint throttle
+serverStatus.metrics.commands.<UNKNOWN>.failed
+serverStatus.metrics.mongos.cursor.moreThanOneBatch
+serverStatus.globalLock.currentQueue.writers
+serverStatus.wiredTiger.cache.eviction walks started from saved location in tree
+serverStatus.wiredTiger.data-handle.connection sweeps
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 1) - 10-49ms
+serverStatus.opLatencies.transactions.queryableEncryptionLatencyMicros
+serverStatus.wiredTiger.capacity.background fsync file handles considered
+serverStatus.wiredTiger.data-handle.connection sweep dhandles removed from hash list
+serverStatus.metrics.aggStageCounters.$changeStream
+serverStatus.wiredTiger.cache.leaf pages split during eviction
+serverStatus.wiredTiger.log.pre-allocated log files not ready and missed
+serverStatus.wiredTiger.session.table alter successful calls
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamOplogMatch
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds next early exit
+serverStatus.featureCompatibilityVersion.major
+serverStatus.network.bytesOut
+serverStatus.network.compression.snappy.decompressor.bytesIn
+serverStatus.tcmalloc.tcmalloc.pageheap_unmapped_bytes
+serverStatus.wiredTiger.log.total in-memory size of compressed records
+serverStatus.metrics.queryExecutor.scannedObjects.total
+serverStatus.metrics.repl.waiters.replication
+systemMetrics.netstat.TcpExt:TCPPLBRehash
+serverStatus.asserts.rollovers
+serverStatus.wiredTiger.reconciliation.pages written including at least one start durable timestamp
+serverStatus.metrics.operatorCounters.windowAccumulators.$arrayToObject
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filters in the LSM tree
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a stop durable timestamp
+systemMetrics.netstat.TcpExt:TCPAOKeyNotFound
+systemMetrics.netstat.IpExt:OutBcastOctets
+systemMetrics.netstat.Tcp:AttemptFails
+serverStatus.wiredTiger.connection.pthread mutex condition wait calls
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamTransform
+serverStatus.metrics.operatorCounters.windowAccumulators.$eq
+systemMetrics.netstat.Tcp:EstabResets
+serverStatus.extra_info.maximum_resident_set_kb
+serverStatus.scramCache.SCRAM-SHA-256.misses
+serverStatus.metrics.operatorCounters.windowAccumulators.$mergeObjects
+serverStatus.metrics.operatorCounters.windowAccumulators.$tan
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated newest stop timestamp
+systemMetrics.netstat.Ip:InDiscards
+systemMetrics.mounts./.capacity
+serverStatus.wiredTiger.cache.history store table truncation to remove an update
+serverStatus.wiredTiger.cache.page split during eviction deepened the tree
+serverStatus.wiredTiger.cache.pages selected for eviction unable to be evicted because of failure in reconciliation
+serverStatus.wiredTiger.cursor.cursor reset calls that return an error
+serverStatus.wiredTiger.transaction.rollback to stable keys restored
+replSetGetStatus.majorityVoteCount
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.compressed page maximum internal page size prior to compression
+systemMetrics.netstat.TcpExt:ListenOverflows
+serverStatus.storageEngine.backupCursorOpen
+replSetGetStatus.members.0.state
+serverStatus.internalTransactions.retriedCommits
+serverStatus.wiredTiger.block-cache.removed blocks
+serverStatus.wiredTiger.cache.eviction walk target pages histogram - 32-63
+serverStatus.wiredTiger.cache.eviction worker thread removed
+serverStatus.wiredTiger.cursor.cursor search calls that return an error
+serverStatus.metrics.operatorCounters.windowAccumulators.$percentile
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of deleted pages skipped during tree walk
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor equals calls that return an error
+serverStatus.wiredTiger.snapshot-window-settings.minimum target snapshot window size in seconds
+serverStatus.extra_info.output_blocks
+serverStatus.readConcernCounters.transactionOps.noneInfo.implicitDefault.local
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to no progress being made
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one start transaction ID
+serverStatus.wiredTiger.concurrentTransactions.monitor.newAdmissions
+serverStatus.metrics.operatorCounters.windowAccumulators.$split
+serverStatus.metrics.operatorCounters.windowAccumulators.$shift
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum leaf page size
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages histogram - 32-63
+systemMetrics.netstat.TcpExt:TCPRenoRecovery
+serverStatus.metrics.cursor.totalOpened.total
+systemMetrics.disks.sda.write_time_ms
+serverStatus.metrics.operatorCounters.windowAccumulators.$dayOfYear
+replSetGetStatus.members.3.configTerm
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor next calls that return an error
+systemMetrics.netstat.TcpExt:TCPDSACKOldSent
+serverStatus.wiredTiger.cache.eviction server skips tree that we do not want to evict
+serverStatus.wiredTiger.cursor.cursor modify value bytes modified
+serverStatus.wiredTiger.transaction.transaction fsync calls for checkpoint after allocating the transaction ID
+serverStatus.electionMetrics.freezeTimeout.called
+serverStatus.wiredTiger.cache.internal pages seen by eviction walk that are already queued
+serverStatus.wiredTiger.transaction.prepared transactions currently active
+serverStatus.metrics.operation.writeConflicts
+systemMetrics.vmstat.pswpout
+serverStatus.catalogStats.timeseries
+serverStatus.shardSplits.totalCommittedDurationMillis
+serverStatus.wiredTiger.cursor.cursor equals calls that return an error
+serverStatus.wiredTiger.log.log records not compressed
+serverStatus.metrics.operatorCounters.windowAccumulators.$acos
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Pages currently queued for eviction
+systemMetrics.netstat.TcpExt:TCPSpuriousRTOs
+systemMetrics.disks.xvda.write_time_ms
+serverStatus.wiredTiger.cursor.cursor search near calls that return an error
+serverStatus.wiredTiger.lock.read timestamp queue lock internal thread time waiting (usecs)
+serverStatus.wiredTiger.session.table compact timeout
+serverStatus.metrics.aggStageCounters.$unset
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.checkpoint size
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor get key calls that return an error
+serverStatus.wiredTiger.cursor.cursor reserve calls
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated newest start durable timestamp
+serverStatus.metrics.operatorCounters.windowAccumulators.$indexOfBytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds prev early exit
+systemMetrics.disks.xvdc.writes
+serverStatus.wiredTiger.block-manager.mapped blocks read
+serverStatus.wiredTiger.cache.application threads page write from cache to disk count
+serverStatus.wiredTiger.cache.bytes not belonging to page images in the cache
+systemMetrics.netstat.TcpExt:TCPAbortOnMemory
+systemMetrics.mounts./proc/timer_list.free
+systemMetrics.mounts./etc/hosts.capacity
+serverStatus.start
+serverStatus.wiredTiger.cache.eviction server skips trees because there are too many active walks
+serverStatus.wiredTiger.data-handle.connection data handles currently active
+serverStatus.wiredTiger.cursor.cursor next calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor insert check calls that return an error
+systemMetrics.netstat.TcpExt:TCPDSACKIgnoredDubious
+systemMetrics.mounts./dev.capacity
+serverStatus.wiredTiger.block-cache.number of bypasses due to overhead on put
+serverStatus.wiredTiger.log.slot join atomic update races
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store variable-size deleted values
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor reconfigure calls that return an error
+serverStatus.readConcernCounters.nonTransactionOps.majority.withoutClusterTime
+serverStatus.wiredTiger.thread-yield.page acquire time sleeping (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$floor
+local.oplog.rs.stats.start
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store variable-size RLE encoded values
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 8
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable keys removed
+serverStatus.wiredTiger.log.yields waiting for previous log file close
+serverStatus.wiredTiger.concurrentTransactions.monitor.addedToQueue
+serverStatus.metrics.aggStageCounters.$_internalStreamingGroup
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor get value calls that return an error
+serverStatus.connections.active
+serverStatus.twoPhaseCommitCoordinator.currentInSteps.waitingForVotes
+serverStatus.wiredTiger.transaction.rollback to stable updates removed from history store
+systemMetrics.netstat.TcpExt:TCPACKSkippedTimeWait
+serverStatus.wiredTiger.cache.eviction walk target strategy only dirty pages
+serverStatus.metrics.operatorCounters.windowAccumulators.$expr
+serverStatus.tcmalloc.tcmalloc.pageheap_decommit_count
+serverStatus.wiredTiger.cache.history store table truncation by rollback to stable to remove an update
+serverStatus.wiredTiger.cursor.cursor reset calls
+serverStatus.wiredTiger.log.total size of compressed records
+systemMetrics.disks.sda.writes
+serverStatus.network.compression.snappy.decompressor.bytesOut
+serverStatus.network.serviceExecutors.fixed.threadsRunning
+serverStatus.twoPhaseCommitCoordinator.totalCommittedTwoPhaseCommit
+serverStatus.wiredTiger.session.open session count
+serverStatus.wiredTiger.transaction.transaction checkpoint total time (msecs)
+serverStatus.wiredTiger.concurrentTransactions.monitor.canceled
+serverStatus.opLatencies.reads.queryableEncryptionLatencyMicros
+serverStatus.twoPhaseCommitCoordinator.currentInSteps.deletingCoordinatorDoc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation to remove range of updates due to key being removed from the data page during reconciliation
+systemMetrics.mounts./proc/timer_list.available
+serverStatus.network.bytesIn
+serverStatus.network.physicalBytesIn
+serverStatus.wiredTiger.session.tiered operations removed without processing
+serverStatus.metrics.operatorCounters.windowAccumulators.$comment
+systemMetrics.cpu.iowait_ms
+systemMetrics.netstat.Tcp:PassiveOpens
+systemMetrics.mounts./proc/latency_stats.capacity
+serverStatus.flowControl.enabled
+serverStatus.flowControl.timeAcquiringMicros
+serverStatus.wiredTiger.transaction.transaction fsync duration for checkpoint after allocating the transaction ID (usecs)
+systemMetrics.mounts./data.capacity
+serverStatus.wiredTiger.cache.reverse splits performed
+serverStatus.wiredTiger.transaction.Number of prepared updates
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store fixed-size time windows
+systemMetrics.mounts./proc/keys.free
+serverStatus.metrics.aggStageCounters.$unwind
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Maximum difference between current eviction generation when the page was last considered
+systemMetrics.netstat.TcpExt:TCPAOBad
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store internal pages
+systemMetrics.netstat.TcpExt:TCPOFOQueue
+systemMetrics.disks.xvda.read_time_ms
+serverStatus.globalLock.currentQueue.total
+serverStatus.wiredTiger.connection.memory allocations
+systemMetrics.netstat.IpExt:InBcastOctets
+serverStatus.wiredTiger.reconciliation.pages written including at least one start transaction ID
+systemMetrics.netstat.TcpExt:TCPAODroppedIcmps
+serverStatus.oplogTruncation.totalTimeProcessingMicros
+serverStatus.wiredTiger.transaction.rollback to stable updates from history store that would have been restored in non-dryrun mode
+local.oplog.rs.stats.storageStats.capped
+serverStatus.storageEngine.oldestRequiredTimestampForCrashRecovery.inc
+serverStatus.wiredTiger.cache.eviction empty score
+serverStatus.metrics.aggStageCounters.$vectorSearch
+serverStatus.metrics.operatorCounters.windowAccumulators.$replaceAll
+serverStatus.metrics.operatorCounters.windowAccumulators.$all
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable skipping delete rle
+systemMetrics.memory.SwapFree_kb
+replSetGetStatus.optimes.readConcernMajorityOpTime.ts.inc
+systemMetrics.mounts./.free
+serverStatus.wiredTiger.cache.forced eviction - pages selected unable to be evicted time
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of times cursor fails to temporarily release pinned page to encourage eviction of hot or large page
+systemMetrics.pressure.io.full.totalMicros
+serverStatus.readPreferenceCounters.executedOnPrimary.tagged.internal
+serverStatus.wiredTiger.cache.eviction walk target pages histogram - 10-31
+serverStatus.metrics.getLastError.wtimeouts.unsatisfiable
+systemMetrics.netstat.IpExt:InECT0Pkts
+serverStatus.connections.totalCreated
+serverStatus.wiredTiger.log.log scan records requiring two reads
+serverStatus.metrics.aggStageCounters.$backupCursorExtend
+serverStatus.metrics.cursor.totalOpened.lessThan1Second
+local.oplog.rs.stats.storageStats.storageSize
+systemMetrics.netstat.Ip:InReceives
+serverStatus.wiredTiger.connection.pthread mutex shared lock write-lock calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.close calls that result in cache
+serverStatus.wiredTiger.capacity.bytes read
+serverStatus.metrics.aggStageCounters.$operationMetrics
+serverStatus.metrics.operatorCounters.windowAccumulators.$substrBytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor prev calls that return an error
+systemMetrics.netstat.TcpExt:TCPAbortOnData
+systemMetrics.mounts./etc/resolv.conf.free
+serverStatus.tcmalloc.tcmalloc.thread_cache_free_bytes
+serverStatus.wiredTiger.block-manager.blocks pre-loaded
+serverStatus.wiredTiger.block-manager.mapped bytes read
+serverStatus.wiredTiger.cache.maximum page size seen at eviction
+serverStatus.wiredTiger.lock.txn global lock application thread time waiting (usecs)
+serverStatus.wiredTiger.transaction.set timestamp oldest calls
+replSetGetStatus.members.3.lastHeartbeatRecv
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filter false positives
+serverStatus.electionMetrics.averageCatchUpOps
+serverStatus.wiredTiger.session.local objects removed
+serverStatus.metrics.operatorCounters.windowAccumulators.$month
+systemMetrics.netstat.TcpExt:TCPFastOpenPassive
+systemMetrics.netstat.TcpExt:TCPDeliveredCE
+serverStatus.extra_info.voluntary_context_switches
+serverStatus.wiredTiger.transaction.rollback to stable updates that would have been aborted in non-dryrun mode
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.fast-path pages deleted
+systemMetrics.memory.MemFree_kb
+systemMetrics.netstat.Ip:InUnknownProtos
+serverStatus.electionMetrics.electionTimeout.called
+serverStatus.opLatencies.transactions.ops
+serverStatus.metrics.commands.collMod.validator.jsonSchema
+serverStatus.metrics.operatorCounters.windowAccumulators.$dayOfWeek
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages histogram - 128 and higher
+serverStatus.wiredTiger.lock.schema lock internal thread wait time (usecs)
+replSetGetStatus.members.0._id
+serverStatus.wiredTiger.block-cache.number of bypasses on put because file is too small
+serverStatus.wiredTiger.cache.overflow keys on a multiblock row-store page blocked its eviction
+serverStatus.metrics.network.totalIngressTLSHandshakeTimeMillis
+serverStatus.metrics.repl.apply.batches.num
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bytes currently in the cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a prepare
+systemMetrics.disks.sda.read_time_ms
+serverStatus.repl.secondary
+serverStatus.wiredTiger.perf.operation read latency histogram (bucket 2) - 250-499us
+serverStatus.wiredTiger.transaction.oldest pinned transaction ID rolled back for eviction
+systemMetrics.disks.sda.reads_merged
+systemMetrics.mounts./proc/acpi.available
+serverStatus.readConcernCounters.transactionOps.none
+serverStatus.metrics.operatorCounters.windowAccumulators.$substrCP
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitsAllClear
+serverStatus.metrics.operatorCounters.windowAccumulators.$covarianceSamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated newest transaction ID
+serverStatus.electionMetrics.catchUpTakeover.called
+serverStatus.wiredTiger.cache.history store table truncation to remove range of updates due to an update without a timestamp on data page
+serverStatus.wiredTiger.cursor.cursor remove calls
+serverStatus.wiredTiger.perf.operation write latency histogram (bucket 4) - 1000-9999us
+serverStatus.metrics.aggStageCounters.$listCatalog
+serverStatus.metrics.operation.temporarilyUnavailableErrors
+serverStatus.metrics.operatorCounters.windowAccumulators.$allElementsTrue
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateDiff
+serverStatus.wiredTiger.cache.hazard pointer maximum array length
+serverStatus.metrics.operatorCounters.windowAccumulators.$toHashedIndexKey
+replSetGetStatus.members.2.health
+serverStatus.metrics.repl.waiters.numTimesChoseDifferent
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks gave up because they saw too many pages and found no candidates
+systemMetrics.netstat.TcpExt:TCPACKSkippedFinWait2
+systemMetrics.disks.sda.io_in_progress
+serverStatus.wiredTiger.cache.bytes belonging to page images in the cache
+serverStatus.wiredTiger.capacity.bytes written for log
+serverStatus.wiredTiger.log.slot join calls slept
+serverStatus.storageEngine.oldestRequiredTimestampForCrashRecovery
+serverStatus.wiredTiger.log.log files manually zero-filled
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.sbeCount
+systemMetrics.netstat.TcpExt:TCPFullUndo
+serverStatus.wiredTiger.lock.txn global lock internal thread time waiting (usecs)
+serverStatus.wiredTiger.reconciliation.maximum milliseconds spent in a reconciliation call
+serverStatus.metrics.operatorCounters.windowAccumulators.$mod
+local.oplog.rs.stats.localTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.modify
+serverStatus.electionMetrics.numCatchUpsSucceeded
+serverStatus.electionMetrics.numCatchUpsSkipped
+serverStatus.wiredTiger.transaction.prepared transactions committed
+serverStatus.metrics.operatorCounters.windowAccumulators.$sampleRate
+replSetGetStatus.optimes.lastCommittedOpTime.ts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.leaf pages split during eviction
+systemMetrics.netstat.IpExt:OutOctets
+start
+serverStatus.indexBulkBuilder.resumed
+transportLayerStats.listenerSocketBacklogQueueDepths.2.172.30.242.94:31569
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.totalBytesSorted
+replSetGetStatus.members.1.lastHeartbeat
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table reads requiring squashed modifies
+serverStatus.metrics.operatorCounters.windowAccumulators.$median
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitsAnyClear
+serverStatus.metrics.queryStats.numHmacApplicationErrors
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.hazard pointer blocked page eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page written was too small to compress
+systemMetrics.mounts./etc/hostname.capacity
+systemMetrics.vmstat.numa_pages_migrated
+serverStatus.batchedDeletes.timeInBatchMillis
+serverStatus.mirroredReads.seen
+serverStatus.wiredTiger.cache.bytes currently in the cache
+serverStatus.metrics.operatorCounters.windowAccumulators.$firstN
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a stop timestamp
+serverStatus.metrics.operatorCounters.windowAccumulators.$reverseArray
+serverStatus.metrics.operatorCounters.windowAccumulators.$substr
+systemMetrics.mounts./proc/scsi.capacity
+serverStatus.locks.ParallelBatchWriterMode.timeAcquiringMicros.W
+serverStatus.wiredTiger.cache.eviction walks started from root of tree
+serverStatus.indexStats.features.wildcard.count
+serverStatus.wiredTiger.log.log bytes written
+serverStatus.wiredTiger.transaction.transaction checkpoint prepare min time (msecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalFindAllValuesAtPath
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalFleBetween
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Clean pages currently in cache
+serverStatus.transportSecurity.unknown
+serverStatus.wiredTiger.connection.detected system time went backwards
+serverStatus.wiredTiger.lock.table read lock acquisitions
+serverStatus.wiredTiger.transaction.sessions scanned in each walk of concurrent sessions
+local.oplog.rs.stats.storageStats.numOrphanDocs
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.tracked dirty bytes in the cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one stop timestamp
+local.oplog.rs.stats.storageStats.nindexes
+serverStatus.wiredTiger.cursor.cursor sweep buckets
+serverStatus.wiredTiger.session.table drop successful calls
+serverStatus.wiredTiger.thread-yield.get reference for page index and slot time sleeping (usecs)
+serverStatus.wiredTiger.transaction.rollback to stable history store keys that would have been swept in non-dryrun mode
+serverStatus.metrics.operatorCounters.windowAccumulators.$slice
+replSetGetStatus.members.3.state
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.compressed page maximum leaf page size prior to compression
+systemMetrics.status.process_opting_into_THP_if_enabled
+systemMetrics.netstat.TcpExt:OfoPruned
+serverStatus.wiredTiger.cache.eviction calls to get a page found queue empty
+serverStatus.wiredTiger.cache.uncommitted truncate blocked page eviction
+serverStatus.wiredTiger.log.log sync time duration (usecs)
+serverStatus.wiredTiger.reconciliation.records written including a stop timestamp
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spilledBytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds cleared from reset
+serverStatus.readConcernCounters.nonTransactionOps.majority
+serverStatus.wiredTiger.cache.history store table truncation to remove all the keys of a btree
+serverStatus.wiredTiger.transaction.a reader raced with a prepared transaction commit and skipped an update or updates
+serverStatus.wiredTiger.cache.eviction server skips pages that previously failed eviction and likely will again
+serverStatus.metrics.operatorCounters.windowAccumulators.$rtrim
+systemMetrics.netstat.Tcp:RtoAlgorithm
+serverStatus.wiredTiger.cache.history store table updates without timestamps fixed up by reinserting with the fixed timestamp
+serverStatus.wiredTiger.capacity.threshold to call fsync
+serverStatus.wiredTiger.lock.read timestamp queue read lock acquisitions
+replSetGetStatus.members.2.optimeDurable.ts.inc
+serverStatus.wiredTiger.perf.operation write latency histogram (bucket 2) - 250-499us
+serverStatus.metrics.operatorCounters.windowAccumulators.$abs
+systemMetrics.netstat.TcpExt:TCPACKSkippedSeq
+serverStatus.wiredTiger.cache.pages currently held in the cache
+serverStatus.wiredTiger.reconciliation.leaf-page overflow keys
+serverStatus.metrics.query.updateDeleteManyDocumentsMaxCount
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.search history store calls
+systemMetrics.netstat.Ip:ReasmOKs
+serverStatus.wiredTiger.cache.maximum bytes configured
+serverStatus.wiredTiger.lock.txn global read lock acquisitions
+serverStatus.wiredTiger.cursor.cursor prev calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$isoWeek
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds prev called on an unpositioned cursor
+systemMetrics.disks.sdb.io_queued_ms
+serverStatus.wiredTiger.cache.eviction server skips trees that are configured to stick in cache
+serverStatus.wiredTiger.transaction.transaction rollback to stable currently running
+serverStatus.wiredTiger.snapshot-window-settings.total number of SnapshotTooOld errors
+serverStatus.metrics.operatorCounters.windowAccumulators.$radiansToDegrees
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 2
+serverStatus.readPreferenceCounters.executedOnPrimary.tagged.external
+serverStatus.wiredTiger.block-cache.number of blocks not evicted due to overhead
+serverStatus.wiredTiger.capacity.bytes written for eviction
+serverStatus.wiredTiger.cursor.cursor bounds cleared from reset
+serverStatus.metrics.operatorCounters.windowAccumulators.$indexOfCP
+replSetGetStatus.members.2.optimeDurable.t
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 64
+serverStatus.opLatencies.commands.latency
+serverStatus.metrics.operatorCounters.windowAccumulators.$geoWithin
+replSetGetStatus.members.3.pingMs
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor prev calls that skip due to a globally visible history store tombstone
+serverStatus.electionMetrics.priorityTakeover.called
+serverStatus.wiredTiger.reconciliation.records written including a stop transaction ID
+serverStatus.catalogStats.clustered
+serverStatus.wiredTiger.cache.history store table writes requiring squashed modifies
+serverStatus.metrics.aggStageCounters.$_internalFindAndModifyImageLookup
+systemMetrics.netstat.TcpExt:TCPLossFailures
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateToString
+serverStatus.metrics.operatorCounters.windowAccumulators.$strLenBytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum leaf page key size
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Average time in cache for pages that have not been visited by the eviction server
+serverStatus.twoPhaseCommitCoordinator.totalStartedTwoPhaseCommit
+serverStatus.wiredTiger.cursor.cursor modify key and value bytes affected
+serverStatus.metrics.mongos.cursor.totalOpened
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.totalKeysSorted
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation to remove all the keys of a btree
+serverStatus.repl.topologyVersion.counter
+serverStatus.metrics.operatorCounters.windowAccumulators.$gt
+serverStatus.connections.threaded
+local.oplog.rs.stats.storageStats.size
+serverStatus.scramCache.SCRAM-SHA-1.misses
+serverStatus.wiredTiger.session.table create failed calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$asinh
+systemMetrics.netstat.Tcp:OutSegs
+serverStatus.metrics.operatorCounters.windowAccumulators.$setIntersection
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages seen by eviction walk
+systemMetrics.netstat.TcpExt:RcvPruned
+replSetGetStatus.members.1.state
+serverStatus.wiredTiger.block-manager.number of times the file was remapped because it changed size via fallocate or truncate
+serverStatus.wiredTiger.log.log sync operations
+serverStatus.metrics.aggStageCounters.$graphLookup
+serverStatus.metrics.changeStreams.largeEventsFailed
+systemMetrics.memory.SwapTotal_kb
+serverStatus.electionMetrics.numCatchUpsTimedOut
+serverStatus.wiredTiger.concurrentTransactions.monitor.startedProcessing
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks restarted
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Pages created in memory and never written
+systemMetrics.disks.xvdb.reads
+serverStatus.wiredTiger.cursor.cursor insert key and value bytes
+serverStatus.wiredTiger.log.log server thread write LSN walk skipped
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 5) - 500-999ms
+serverStatus.wiredTiger.snapshot-window-settings.min pinned timestamp
+serverStatus.metrics.operatorCounters.windowAccumulators.$setField
+replSetGetStatus.members.1.optime.t
+serverStatus.wiredTiger.cache.eviction worker thread stable number
+serverStatus.wiredTiger.cursor.Total number of entries skipped by cursor next calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$toString
+replSetGetStatus.members.2.configVersion
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor search near calls that return an error
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.checkpoint has acquired a snapshot for its transaction
+systemMetrics.netstat.IpExt:InNoRoutes
+serverStatus.transactions.currentPrepared
+serverStatus.metrics.aggStageCounters.$sort
+replSetGetStatus.members.2.lastHeartbeatRecv
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.blocks freed
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.operation restarted
+serverStatus.tcmalloc.tcmalloc.pageheap_total_commit_bytes
+serverStatus.wiredTiger.log.slot join found active slot closed
+serverStatus.metrics.aggStageCounters.$sortByCount
+serverStatus.metrics.queryStats.numEvicted
+systemMetrics.netstat.Ip:DefaultTTL
+systemMetrics.mounts./etc/hosts.available
+systemMetrics.mounts./proc/acpi.capacity
+serverStatus.indexBuilds.phases.drainSideWritesTableOnCommit
+serverStatus.wiredTiger.lock.durable timestamp queue read lock acquisitions
+serverStatus.wiredTiger.log.log scan operations
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 6) - 1000ms+
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated newest transaction ID
+serverStatus.metrics.query.queryFramework.aggregate.sbeOnly
+replSetGetStatus.members.3.optime.t
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.reverse splits performed
+serverStatus.wiredTiger.cache.internal pages evicted
+serverStatus.wiredTiger.log.maximum log file size
+serverStatus.metrics.operatorCounters.windowAccumulators.$ceil
+systemMetrics.netstat.TcpExt:TCPDSACKOfoRecv
+systemMetrics.netstat.TcpExt:TCPOFOMerge
+systemMetrics.netstat.TcpExt:TCPFastOpenActive
+serverStatus.wiredTiger.reconciliation.page reconciliation calls for eviction
+systemMetrics.cpu.user_ms
+end
+serverStatus.catalogStats.internalViews
+serverStatus.wiredTiger.cache.eviction server skips trees that are being checkpointed
+serverStatus.wiredTiger.cache.tracked bytes belonging to leaf pages in the cache
+serverStatus.wiredTiger.cursor.cursor truncates performed on individual keys
+replSetGetStatus.lastStableRecoveryTimestamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.approximate byte size of transaction IDs in pages written
+serverStatus.wiredTiger.cache.eviction walk target pages histogram - 64-128
+serverStatus.metrics.cursor.totalOpened.greaterThanOrEqual10Minutes
+systemMetrics.netstat.TcpExt:SyncookiesFailed
+systemMetrics.mounts./conf.available
+systemMetrics.vmstat.pswpin
+serverStatus.wiredTiger.cache.bytes belonging to the history store table in the cache
+serverStatus.metrics.operatorCounters.windowAccumulators.$ln
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree checkpoint generation
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.modified pages evicted
+systemMetrics.cpu.nice_ms
+systemMetrics.disks.xvdh.write_sectors
+serverStatus.network.numSlowDNSOperations
+serverStatus.wiredTiger.cache.eviction server slept, because we did not make progress with eviction
+serverStatus.wiredTiger.lock.checkpoint lock application thread wait time (usecs)
+serverStatus.wiredTiger.session.table drop failed calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$jsonSchema
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor prev calls that skip less than 100 entries
+systemMetrics.netstat.TcpExt:PFMemallocDrop
+serverStatus.wiredTiger.block-manager.blocks read
+serverStatus.wiredTiger.transaction.Number of prepared updates rolled back
+systemMetrics.netstat.TcpExt:TCPSackShiftFallback
+systemMetrics.disks.xvdc.writes_merged
+serverStatus.extra_info.user_time_us
+serverStatus.readConcernCounters.nonTransactionOps.local
+serverStatus.metrics.aggStageCounters.$_internalComputeGeoNearDistance
+systemMetrics.netstat.TcpExt:TCPLossUndo
+systemMetrics.netstat.TcpExt:TCPMemoryPressuresChrono
+systemMetrics.disks.xvdh.io_queued_ms
+serverStatus.uptime
+serverStatus.opcounters.delete
+serverStatus.security.authentication.mechanisms.MONGODB-X509.authenticate.received
+serverStatus.metrics.operatorCounters.windowAccumulators.$denseRank
+serverStatus.metrics.repl.executor.queues.sleepers
+serverStatus.oplog.latestOptime.inc
+serverStatus.metrics.aggStageCounters.$bucket
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.overflow pages
+systemMetrics.netstat.Ip:ReasmReqds
+serverStatus.tcmalloc.tcmalloc.pageheap_commit_count
+serverStatus.metrics.operatorCounters.windowAccumulators.$setIsSubset
+serverStatus.wiredTiger.transaction.transaction checkpoint scrub dirty target
+systemMetrics.netstat.TcpExt:TCPDSACKOfoSent
+serverStatus.wiredTiger.cache.eviction walk target pages histogram - 0-9
+serverStatus.wiredTiger.cursor.cursor search near calls
+serverStatus.metrics.diskSpaceMonitor.tookAction
+replSetGetStatus.optimes.readConcernMajorityOpTime.ts
+systemMetrics.cpu.num_cores_available_to_process
+systemMetrics.disks.xvda.io_queued_ms
+serverStatus.wiredTiger.cache.eviction server skips pages that are written with transactions greater than the last running
+serverStatus.wiredTiger.cache.in-memory page splits
+serverStatus.wiredTiger.cache.modified pages evicted
+serverStatus.metrics.operatorCounters.windowAccumulators.$accumulator
+serverStatus.metrics.ttl.passes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation by rollback to stable to remove an update
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one stop durable timestamp
+serverStatus.wiredTiger.thread-yield.connection close blocked waiting for transaction state stabilization
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spilledDataStorageSize
+serverStatus.metrics.aggStageCounters.$queryStats
+serverStatus.metrics.operatorCounters.windowAccumulators.$last
+serverStatus.metrics.operatorCounters.windowAccumulators.$setEquals
+replSetGetStatus.optimes.durableOpTime.ts.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.file size in bytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of on-disk deleted pages skipped during tree walk
+serverStatus.wiredTiger.oplog.visibility timestamp.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.insert calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.update conflicts
+systemMetrics.netstat.TcpExt:TCPAOGood
+serverStatus.network.compression.snappy.compressor.bytesOut
+serverStatus.wiredTiger.cache.eviction server skips trees that were not useful before
+serverStatus.wiredTiger.lock.metadata lock application thread wait time (usecs)
+serverStatus.wiredTiger.reconciliation.pages deleted
+serverStatus.metrics.repl.waiters.sizeBytes
+replSetGetStatus.votingMembersCount
+serverStatus.wiredTiger.block-manager.bytes written via system call API
+serverStatus.metrics.operatorCounters.windowAccumulators.$minute
+serverStatus.metrics.operatorCounters.windowAccumulators.$toBool
+serverStatus.network.compression.zstd.compressor.bytesIn
+serverStatus.wiredTiger.cache.eviction gave up due to detecting update chain entries without timestamps after the selected on disk update
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Average time in cache for pages that have been visited by the eviction server
+systemMetrics.disks.xvdh.write_time_ms
+serverStatus.wiredTiger.cache.history store table truncation by rollback to stable to remove an unstable update
+serverStatus.metrics.network.totalEgressConnectionEstablishmentTimeMillis
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.hashLookup
+replSetGetStatus.members.3.optimeDate
+serverStatus.security.authentication.saslSupportedMechsReceived
+serverStatus.security.SSLServerCertificateExpirationDate
+serverStatus.wiredTiger.connection.auto adjusting condition wait calls
+replSetGetStatus.members.1.electionTime.inc
+replSetGetStatus.end
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bytes written from cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of times a search near has exited due to prefix config
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.update key and value bytes
+serverStatus.wiredTiger.thread-state.active filesystem read calls
+systemMetrics.cpu.num_logical_cores
+systemMetrics.netstat.Tcp:RtoMax
+systemMetrics.disks.xvdb.writes
+serverStatus.wiredTiger.transaction.rollback to stable updates aborted
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalOwningShard
+serverStatus.metrics.operatorCounters.windowAccumulators.$convert
+systemMetrics.netstat.Tcp:ActiveOpens
+serverStatus.wiredTiger.cursor.cursor get key calls that return an error
+serverStatus.metrics.commands.<UNKNOWN>.arrayFilters
+replSetGetStatus.members.1.optimeDurable.ts.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio greater than 64
+systemMetrics.netstat.TcpExt:TCPRenoRecoveryFail
+serverStatus.readConcernCounters.transactionOps.local
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount
+serverStatus.metrics.queryExecutor.scannedObjects.nonTailable
+replSetGetStatus.members.1.lastAppliedWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.allocations requiring file extension
+serverStatus.wiredTiger.cursor.cursor remove calls that return an error
+serverStatus.wiredTiger.reconciliation.split bytes currently awaiting free
+serverStatus.wiredTiger.session.table compact successful calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$alwaysFalse
+serverStatus.metrics.repl.network.getmores.num
+serverStatus.wiredTiger.cache.eviction walks restarted
+serverStatus.wiredTiger.cursor.cursor bound calls that return an error
+serverStatus.wiredTiger.cursor.cursor bounds prev called on an unpositioned cursor
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateFromParts
+systemMetrics.files.sys_file_handles_in_use
+serverStatus.wiredTiger.cache.pages requested from the cache
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent duration for gathering applied handles (usecs)
+serverStatus.metrics.commands.create.validator.failed
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.minor version number
+systemMetrics.netstat.TcpExt:TCPHystartDelayCwnd
+serverStatus.indexBulkBuilder.filesOpenedForExternalSort
+serverStatus.wiredTiger.cache.eviction gave up due to detecting a tombstone without a timestamp ahead of the selected on disk update after validating the update chain
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filter misses
+systemMetrics.mounts./proc/latency_stats.free
+serverStatus.wiredTiger.transaction.rollback to stable keys that would have been restored in non-dryrun mode
+serverStatus.wiredTiger.concurrentTransactions.monitor.finishedProcessing
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalJsReduce
+serverStatus.metrics.operatorCounters.windowAccumulators.$documentNumber
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one start durable timestamp
+systemMetrics.netstat.TcpExt:TCPSackRecovery
+systemMetrics.netstat.Ip:ReasmTimeout
+serverStatus.locks.Database.acquireCount.r
+serverStatus.metrics.operatorCounters.windowAccumulators.$second
+systemMetrics.netstat.TcpExt:TCPFastOpenPassiveFail
+serverStatus.wiredTiger.cache.internal page split blocked its eviction
+serverStatus.wiredTiger.cursor.cursor reserve calls that return an error
+serverStatus.wiredTiger.session.table salvage successful calls
+serverStatus.wiredTiger.thread-yield.data handle lock yielded
+serverStatus.wiredTiger.snapshot-window-settings.current available snapshot window size in seconds
+serverStatus.metrics.operatorCounters.windowAccumulators.$add
+replSetGetStatus.members.2.pingMs
+systemMetrics.mounts./etc/resolv.conf.available
+serverStatus.wiredTiger.block-cache.total bytes inserted on write path
+serverStatus.wiredTiger.cache.eviction walk target pages reduced due to history store cache pressure
+serverStatus.wiredTiger.lock.dhandle lock application thread time waiting (usecs)
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncation by rollback to stable to remove an unstable update
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table updates without timestamps fixed up by reinserting with the fixed timestamp
+systemMetrics.memory.Inactive(file)_kb
+systemMetrics.netstat.TcpExt:TCPSackRecoveryFail
+serverStatus.locks.oplog.acquireCount.r
+serverStatus.network.compression.zlib.decompressor.bytesOut
+serverStatus.repl.lastWrite.majorityWriteDate
+serverStatus.wiredTiger.cache.modified pages evicted by application threads
+serverStatus.logicalSessionRecordCache.lastSessionsCollectionJobEntriesRefreshed
+serverStatus.tcmalloc.tcmalloc.pageheap_total_reserve_bytes
+serverStatus.wiredTiger.cursor.cursor sweep cursors closed
+serverStatus.wiredTiger.cursor.cursor sweeps
+serverStatus.wiredTiger.lock.dhandle lock internal thread time waiting (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$lt
+serverStatus.locks.Database.acquireCount.W
+serverStatus.storageEngine.supportsCommittedReads
+serverStatus.wiredTiger.cache.eviction gave up due to needing to remove a record from the history store but checkpoint is running
+serverStatus.wiredTiger.lock.durable timestamp queue lock application thread time waiting (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalIndexKey
+serverStatus.metrics.operatorCounters.windowAccumulators.$toLower
+serverStatus.connections.awaitingTopologyChanges
+serverStatus.wiredTiger.transaction.race to read prepared update retry
+systemMetrics.pressure.memory.full.totalMicros
+serverStatus.network.compression.zstd.decompressor.bytesIn
+serverStatus.repl.rbid
+serverStatus.network.compression.snappy.compressor.bytesIn
+serverStatus.wiredTiger.cache.total milliseconds spent inside reentrant history store evictions in a reconciliation
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table insert calls
+systemMetrics.memory.Active_kb
+systemMetrics.memory.Inactive(anon)_kb
+serverStatus.wiredTiger.cache.history store table reads requiring squashed modifies
+serverStatus.wiredTiger.transaction.rollback to stable history store records with stop timestamps older than newer records
+serverStatus.wiredTiger.data-handle.connection sweep dhandles closed
+serverStatus.wiredTiger.transaction.transaction checkpoints skipped because database was clean
+serverStatus.metrics.commands.<UNKNOWN>
+serverStatus.metrics.operatorCounters.windowAccumulators.$trim
+systemMetrics.netstat.TcpExt:TCPHPHits
+systemMetrics.netstat.TcpExt:TCPBacklogCoalesce
+systemMetrics.mounts./conf.capacity
+serverStatus.indexBulkBuilder.numSorted
+replSetGetStatus.members.0.optime.ts
+systemMetrics.mounts./proc/kcore.free
+serverStatus.oplogTruncation.totalTimeTruncatingMicros
+serverStatus.wiredTiger.cache.eviction server candidate queue not empty when topping up
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.classicMicros
+serverStatus.indexBuilds.total
+serverStatus.metrics.aggStageCounters.$_internalConvertBucketIndexStats
+serverStatus.readConcernCounters.nonTransactionOps.noneInfo.CWRC.majority
+serverStatus.wiredTiger.cache.eviction state
+serverStatus.wiredTiger.cursor.cursor largest key calls that return an error
+serverStatus.wiredTiger.log.log server thread advances write LSN
+serverStatus.wiredTiger.reconciliation.records written including a start timestamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page split during eviction deepened the tree
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.create calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.update calls
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 4) - 250-499ms
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent handles applied
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable updates from history store that would have been restored in non-dryrun mode
+serverStatus.wiredTiger.cache.history store table max on-disk size
+serverStatus.wiredTiger.log.slot join calls atomic updates raced
+serverStatus.metrics.aggStageCounters.$searchMeta
+serverStatus.metrics.operation.totalTimeWaitingBeforeConnectionTimeoutMillis
+serverStatus.logicalSessionRecordCache.lastTransactionReaperJobTimestamp
+serverStatus.wiredTiger.log.pre-allocated log files used
+serverStatus.metrics.repl.waiters.ops
+replSetGetStatus.members.0.lastDurableWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncations that would have happened in non-dryrun mode
+serverStatus.wiredTiger.cursor.cursor prev calls that return an error
+serverStatus.metrics.operatorCounters.windowAccumulators.$isArray
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable inconsistent checkpoint
+systemMetrics.mounts./proc/timer_list.capacity
+serverStatus.wiredTiger.session.table alter triggering checkpoint calls
+serverStatus.metrics.operation.temporarilyUnavailableErrorsConvertedToWriteConflict
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.search near calls
+serverStatus.wiredTiger.transaction.update conflicts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks random search fails to locate a page, results in a null position
+serverStatus.wiredTiger.block-cache.number of eviction passes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.truncate calls
+systemMetrics.netstat.Ip:FragFails
+serverStatus.extra_info.threads
+serverStatus.transactions.currentInactive
+serverStatus.metrics.operatorCounters.windowAccumulators.$strcasecmp
+systemMetrics.netstat.TcpExt:TCPSACKReneging
+serverStatus.indexBuilds.phases.drainSideWritesTable
+serverStatus.tcmalloc.generic.heap_size
+serverStatus.wiredTiger.cache.pages seen by eviction walk
+systemMetrics.vmstat.nr_mlock
+serverStatus.storageEngine.dropPendingIdents
+serverStatus.wiredTiger.block-cache.total bytes inserted on read path
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalJsEmit
+serverStatus.metrics.repl.waiters.bytes
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.modify value bytes modified
+systemMetrics.netstat.TcpExt:TCPMigrateReqFailure
+serverStatus.indexBulkBuilder.filesClosedForExternalSort
+serverStatus.wiredTiger.block-manager.blocks written
+serverStatus.metrics.aggStageCounters.$currentOp
+serverStatus.metrics.operatorCounters.windowAccumulators.$top
+serverStatus.metrics.repl.executor.pool.inProgressCount
+replSetGetStatus.members.1.optimeDate
+replSetGetStatus.members.2.optimeDate
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds search near call repositioned cursor
+serverStatus.wiredTiger.block-cache.total blocks inserted on write path
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page reconciliation calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor next calls that skip greater than or equal to 100 entries
+systemMetrics.disks.sda.io_time_ms
+serverStatus.locks.ParallelBatchWriterMode.timeAcquiringMicros.r
+replSetGetStatus.optimes.lastAppliedWallTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk passes of a file
+serverStatus.wiredTiger.cursor.cursor next calls that skip due to a globally visible history store tombstone
+serverStatus.wiredTiger.session.table truncate successful calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$sqrt
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks gave up because they restarted their walk twice
+serverStatus.logicalSessionRecordCache.lastSessionsCollectionJobEntriesEnded
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 2) - 50-99ms
+serverStatus.metrics.network.totalTimeForEgressConnectionAcquiredToWireMicros
+serverStatus.metrics.query.planCache.classic.hits
+serverStatus.metrics.repl.network.getmores.totalMillis
+serverStatus.encryptionAtRest.encryptionEnabled
+serverStatus.tenantMigrations.totalMigrationDonationsAborted
+serverStatus.wiredTiger.checkpoint-cleanup.pages added for eviction
+serverStatus.wiredTiger.concurrentTransactions.monitor.timesDecreased
+serverStatus.mem.supported
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateFromString
+systemMetrics.netstat.Ip:OutRequests
+serverStatus.indexBulkBuilder.spilledRanges
+serverStatus.wiredTiger.cache.pages read into cache after truncate
+serverStatus.wiredTiger.transaction.rollback to stable skipping delete rle
+systemMetrics.netstat.TcpExt:TCPFastOpenListenOverflow
+serverStatus.readConcernCounters.transactionOps.noneInfo.CWRC.majority
+serverStatus.wiredTiger.capacity.time waiting during eviction (usecs)
+serverStatus.wiredTiger.log.log force write operations
+serverStatus.wiredTiger.log.slot close unbuffered waits
+serverStatus.metrics.operatorCounters.windowAccumulators.$nin
+serverStatus.scramCache.SCRAM-SHA-1.hits
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitOr
+serverStatus.metrics.operatorCounters.windowAccumulators.$stdDevPop
+serverStatus.metrics.operatorCounters.windowAccumulators.$_internalConstructStats
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks abandoned
+serverStatus.extra_info.input_blocks
+serverStatus.wiredTiger.log.log force write operations skipped
+serverStatus.metrics.operatorCounters.windowAccumulators.$and
+serverStatus.metrics.operatorCounters.windowAccumulators.$concat
+serverStatus.metrics.repl.waiters.batchSize
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table writes requiring squashed modifies
+serverStatus.readPreferenceCounters.executedOnSecondary.tagged.external
+serverStatus.wiredTiger.block-cache.total bytes
+serverStatus.wiredTiger.cache.eviction calls to get a page found queue empty after locking
+serverStatus.wiredTiger.cache.pages walked for eviction
+serverStatus.wiredTiger.reconciliation.pages written including at least one prepare state
+serverStatus.metrics.commands.<UNKNOWN>.total
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor largest key calls that return an error
+serverStatus.logicalSessionRecordCache.lastTransactionReaperJobDurationMillis
+serverStatus.wiredTiger.cache.forced eviction - history store pages successfully evicted while session has history store cursor open
+serverStatus.wiredTiger.log.number of pre-allocated log files to create
+serverStatus.wiredTiger.reconciliation.page reconciliation calls
+serverStatus.wiredTiger.thread-yield.connection close yielded for lsm manager shutdown
+serverStatus.metrics.repl.waiters.numTimesCouldNotFind
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.row-store empty values
+systemMetrics.netstat.TcpExt:TCPSACKDiscard
+serverStatus.repl.setVersion
+serverStatus.wiredTiger.connection.files currently open
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.classicWorks
+systemMetrics.netstat.TcpExt:TCPMD5Failure
+serverStatus.wiredTiger.block-manager.bytes written for checkpoint
+serverStatus.metrics.operatorCounters.windowAccumulators.$addToSet
+serverStatus.metrics.ttl.collSubpassesIncreasedPriority
+local.oplog.rs.stats.storageStats.maxSize
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of in-memory deleted pages skipped during tree walk
+serverStatus.wiredTiger.cursor.Total number of times cursor temporarily releases pinned page to encourage eviction of hot or large page
+serverStatus.wiredTiger.cache.tracked dirty bytes in the cache
+serverStatus.wiredTiger.connection.pthread mutex shared lock read-lock calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor reset calls that return an error
+serverStatus.wiredTiger.block-cache.file size causing bypass
+serverStatus.metrics.operatorCounters.windowAccumulators.$cosh
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages histogram - 64-128
+serverStatus.wiredTiger.autocommit.retries for readonly operations
+serverStatus.wiredTiger.cache.history store table reads
+serverStatus.wiredTiger.cache.internal pages seen by eviction walk
+systemMetrics.disks.sdb.reads_merged
+serverStatus.wiredTiger.transaction.rollback to stable pages visited
+serverStatus.metrics.repl.waiters.unsignaledEvents
+replSetGetStatus.members.1.electionTime
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable updates that would have been removed from history store in non-dryrun mode
+systemMetrics.cpu.guest_ms
+serverStatus.repl.lastWrite.lastWriteDate.t
+serverStatus.wiredTiger.cursor.cursor modify calls
+serverStatus.metrics.repl.waiters.numSelections
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bytes dirty in the cache cumulative
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page written requiring history store records
+transportLayerStats.listenerSocketBacklogQueueDepths.0./tmp/mongodb-31569.sock
+systemMetrics.netstat.TcpExt:TCPRenoFailures
+serverStatus.wiredTiger.cache.eviction worker thread active
+serverStatus.wiredTiger.session.flush_tier operation calls
+serverStatus.metrics.aggStageCounters.$lookup
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.fixed-record size
+systemMetrics.disks.sdb.reads
+serverStatus.metrics.query.planCache.sbe.hits
+replSetGetStatus.members.0.lastAppliedWallTime
+replSetGetStatus.members.3.lastAppliedWallTime
+serverStatus.indexBuilds.phases.commit
+serverStatus.locks.ReplicationStateTransition.timeAcquiringMicros.W
+serverStatus.tcmalloc.generic.current_allocated_bytes
+serverStatus.metrics.operatorCounters.windowAccumulators.$gte
+serverStatus.metrics.operatorCounters.windowAccumulators.$elemMatch
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor compare calls that return an error
+systemMetrics.netstat.TcpExt:TCPRcvQDrop
+serverStatus.wiredTiger.data-handle.session sweep attempts
+serverStatus.wiredTiger.transaction.transaction checkpoint currently running
+serverStatus.metrics.aggStageCounters.$planCacheStats
+serverStatus.metrics.commands.create.validator.jsonSchema
+serverStatus.metrics.repl.network.getmores.numEmptyBatches
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.internal page key bytes discarded using suffix compression
+systemMetrics.memory.Dirty_kb
+serverStatus.collectionCatalog.numScansDueToMissingMapping
+systemMetrics.netstat.Tcp:InCsumErrors
+serverStatus.wiredTiger.cursor.Total number of times a search near has exited due to prefix config
+serverStatus.wiredTiger.session.attempts to remove a local object and the object is in use
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.hashLookupSpillToDisk
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.chunks in the LSM tree
+systemMetrics.disks.xvda.reads_merged
+serverStatus.queryAnalyzers.totalSampledReadsCount
+serverStatus.wiredTiger.transaction.transaction checkpoint generation
+serverStatus.metrics.query.internalRetryableWriteCount
+serverStatus.metrics.query.planCache.classic.misses
+serverStatus.metrics.document.inserted
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.total size of bloom filters
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Average on-disk page image size seen
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including at least one stop transaction ID
+systemMetrics.netstat.TcpExt:ArpFilter
+systemMetrics.netstat.TcpExt:TCPWqueueTooBig
+systemMetrics.disks.xvda.io_time_ms
+serverStatus.featureCompatibilityVersion.transitioning
+serverStatus.locks.Global.acquireCount.W
+serverStatus.wiredTiger.cache.pages queued for urgent eviction during walk
+serverStatus.metrics.operatorCounters.windowAccumulators.$acosh
+serverStatus.wiredTiger.reconciliation.VLCS pages explicitly reconciled as empty
+serverStatus.wiredTiger.transaction.checkpoint has acquired a snapshot for its transaction
+serverStatus.metrics.operatorCounters.windowAccumulators.$week
+serverStatus.metrics.repl.waiters.completed
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.the number of times full update inserted to history store
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Refs skipped during cache traversal
+serverStatus.indexBuilds.phases.scanCollection
+serverStatus.readConcernCounters.nonTransactionOps.linearizable
+serverStatus.wiredTiger.thread-yield.application thread time waiting for cache (usecs)
+replSetGetStatus.members.1.health
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.update value size change
+serverStatus.wiredTiger.log.slot close lost race
+serverStatus.wiredTiger.session.session query timestamp calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.leaf-page overflow keys
+systemMetrics.netstat.TcpExt:PruneCalled
+systemMetrics.netstat.IpExt:ReasmOverlaps
+serverStatus.flowControl.targetRateLimit
+serverStatus.locks.Collection.acquireCount.W
+serverStatus.wiredTiger.cache.pages selected for eviction unable to be evicted
+serverStatus.metrics.operatorCounters.windowAccumulators.$bsonSize
+serverStatus.network.tcpFastOpen.accepted
+serverStatus.tcmalloc.tcmalloc.pageheap_free_bytes
+serverStatus.wiredTiger.log.log sync_dir operations
+replSetGetStatus.members.0.optime.t
+serverStatus.connections.exhaustIsMaster
+serverStatus.wiredTiger.session.tiered storage local retention time (secs)
+serverStatus.metrics.queryStats.queryStatsStoreSizeEstimateBytes
+systemMetrics.disks.xvdh.io_time_ms
+serverStatus.wiredTiger.checkpoint-cleanup.pages removed
+serverStatus.metrics.commands.<UNKNOWN>.pipeline
+replSetGetStatus.members.1.optimeDurable.ts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated prepare
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a start transaction ID
+serverStatus.wiredTiger.cache.pages selected for eviction unable to be evicted because of race between checkpoint and updates without timestamps
+serverStatus.wiredTiger.cache.pages written from cache
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walk target pages reduced due to history store cache pressure
+systemMetrics.netstat.TcpExt:OutOfWindowIcmps
+serverStatus.opcountersRepl.getmore
+serverStatus.metrics.dotsAndDollarsFields.inserts
+serverStatus.metrics.operatorCounters.windowAccumulators.$millisecond
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds comparisons performed
+serverStatus.indexBuilds.phases.drainSideWritesTablePreCommit
+serverStatus.network.compression.zstd.compressor.bytesOut
+serverStatus.wiredTiger.transaction.rollback to stable calls
+replSetGetStatus.optimes.appliedOpTime.ts.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.a reader raced with a prepared transaction commit and skipped an update or updates
+systemMetrics.disks.xvdh.reads
+serverStatus.queryAnalyzers.totalCollections
+serverStatus.storageEngine.readOnly
+serverStatus.wiredTiger.cache.tracked dirty pages in the cache
+serverStatus.wiredTiger.lock.txn global write lock acquisitions
+serverStatus.metrics.aggStageCounters.$collStats
+serverStatus.metrics.operatorCounters.windowAccumulators.$rand
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.overflow values written
+systemMetrics.netstat.IpExt:OutMcastOctets
+serverStatus.metrics.getLastError.wtimeouts.wtimeouts
+systemMetrics.cpu.processes
+systemMetrics.disks.xvdh.writes_merged
+systemMetrics.mounts./proc/scsi.free
+serverStatus.wiredTiger.lock.table lock application thread time waiting for the table lock (usecs)
+serverStatus.wiredTiger.reconciliation.pages written including at least one stop timestamp
+serverStatus.wiredTiger.transaction.transaction checkpoints due to obsolete pages
+systemMetrics.cpu.procs_blocked
+systemMetrics.netstat.TcpExt:TCPReqQFullDoCookies
+serverStatus.wiredTiger.block-cache.total blocks inserted on read path
+serverStatus.metrics.operatorCounters.windowAccumulators.$toDate
+serverStatus.oplog.latestOptime
+serverStatus.wiredTiger.cache.percentage overhead
+replSetGetStatus.members.0.optimeDate
+serverStatus.electionMetrics.numCatchUpsFailedWithNewTerm
+serverStatus.wiredTiger.cursor.cursor create calls
+serverStatus.metrics.aggStageCounters.$bucketAuto
+systemMetrics.netstat.TcpExt:DelayedACKLocked
+systemMetrics.disks.sdb.writes_merged
+systemMetrics.mounts./dev/termination-log.available
+serverStatus.wiredTiger.lock.schema lock application thread wait time (usecs)
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Dirty pages currently in cache
+systemMetrics.netstat.TcpExt:DelayedACKs
+systemMetrics.netstat.TcpExt:TcpTimeoutRehash
+serverStatus.pid
+serverStatus.wiredTiger.lock.durable timestamp queue lock internal thread time waiting (usecs)
+serverStatus.wiredTiger.cache.eviction walks random search fails to locate a page, results in a null position
+serverStatus.wiredTiger.cache.eviction walks gave up because they saw too many pages and found no candidates
+serverStatus.wiredTiger.block-cache.number of misses
+serverStatus.wiredTiger.cache.eviction walks gave up because they restarted their walk twice
+serverStatus.wiredTiger.connection.hash bucket array size for data handles
+serverStatus.wiredTiger.transaction.rollback to stable skipping stable rle
+serverStatus.metrics.getLastError.default.totalMillis
+serverStatus.metrics.operatorCounters.windowAccumulators.$zip
+serverStatus.metrics.repl.waiters.maxSizeBytes
+replSetGetStatus.members.3.optimeDurable.t
+serverStatus.wiredTiger.transaction.rollback to stable tree walk skipping pages
+replSetGetStatus.myState
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Current eviction generation
+systemMetrics.netstat.TcpExt:TCPRenoReorder
+systemMetrics.netstat.Ip:OutNoRoutes
+systemMetrics.disks.xvdh.writes
+systemMetrics.mounts./proc/kcore.capacity
+serverStatus.scramCache.SCRAM-SHA-1.count
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent duration for gathering skipped handles (usecs)
+serverStatus.ok
+transportLayerStats.end
+serverStatus.wiredTiger.connection.total write I/Os
+serverStatus.wiredTiger.cursor.cursor modify calls that return an error
+serverStatus.metrics.aggStageCounters.$project
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.highest merge generation in the LSM tree
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.maximum blocks required for a page
+serverStatus.wiredTiger.data-handle.connection sweep candidate became referenced
+serverStatus.wiredTiger.transaction.transaction range of IDs currently pinned by a checkpoint
+serverStatus.metrics.aggStageCounters.$_internalDensify
+serverStatus.metrics.aggStageCounters.$shardedDataDistribution
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.locate a random in-mem ref by examining all entries on the root page
+serverStatus.wiredTiger.log.logging bytes consolidated
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamHandleTopologyChange
+serverStatus.metrics.operatorCounters.windowAccumulators.$indexOfArray
+serverStatus.metrics.queryExecutor.scannedObjects
+serverStatus.wiredTiger.cache.history store table reads missed
+serverStatus.wiredTiger.reconciliation.maximum milliseconds spent in building a disk image in a reconciliation
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written from cache
+systemMetrics.vmstat.balloon_inflate
+serverStatus.flowControl.locksPerKiloOp
+serverStatus.wiredTiger.checkpoint-cleanup.pages skipped during tree walk
+serverStatus.metrics.operatorCounters.windowAccumulators.$isoWeekYear
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.search calls
+serverStatus.wiredTiger.cache.the number of times full update inserted to history store
+serverStatus.wiredTiger.transaction.Number of prepared updates committed
+serverStatus.metrics.operatorCounters.windowAccumulators.$anyElementTrue
+systemMetrics.netstat.TcpExt:TCPSlowStartRetrans
+systemMetrics.disks.xvdh.read_time_ms
+serverStatus.indexBulkBuilder.bytesSpilledUncompressed
+serverStatus.wiredTiger.reconciliation.split objects currently awaiting free
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamCheckInvalidate
+serverStatus.metrics.aggStageCounters.$_internalReshardingIterateTransaction
+replSetGetStatus.members.1.lastDurableWallTime
+systemMetrics.netstat.TcpExt:TCPRetransFail
+systemMetrics.netstat.TcpExt:TCPMTUPFail
+serverStatus.transportSecurity.1.3
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamUnwindTransaction
+serverStatus.metrics.query.updateDeleteManyDocumentsTotalCount
+serverStatus.wiredTiger.cache.pages read into cache after truncate in prepare state
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable tombstones from history store that would have been restored in non-dryrun mode
+serverStatus.locks.Collection.acquireCount.r
+serverStatus.metrics.cursor.totalOpened.lessThan15Seconds
+serverStatus.metrics.repl.waiters.userOperationsRunning
+serverStatus.wiredTiger.cursor.Total number of entries skipped by cursor prev calls
+serverStatus.wiredTiger.perf.operation write latency histogram (bucket 5) - 10000us+
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamAddPreImage
+serverStatus.metrics.network.totalIngressTLSConnections
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.compressed pages written
+serverStatus.scramCache.SCRAM-SHA-256.hits
+serverStatus.wiredTiger.data-handle.connection sweep time-of-death sets
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalTickets
+local.oplog.rs.stats.storageStats.freeStorageSize
+systemMetrics.disks.xvdb.reads_merged
+serverStatus.catalogStats.collections
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.page reconciliation calls for eviction
+systemMetrics.netstat.TcpExt:TCPACKSkippedPAWS
+serverStatus.storageEngine.supportsSnapshotReadConcern
+replSetGetStatus.members.3.lastHeartbeat
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.row-store internal pages
+serverStatus.logicalSessionRecordCache.lastSessionsCollectionJobCursorsClosed
+serverStatus.wiredTiger.cache.history store table truncation to remove range of updates due to key being removed from the data page during reconciliation
+serverStatus.wiredTiger.log.force log remove time sleeping (usecs)
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor search calls that return an error
+systemMetrics.disks.xvdc.read_time_ms
+serverStatus.asserts.regular
+serverStatus.queryAnalyzers.activeCollections
+serverStatus.wiredTiger.cache.pages queued for eviction
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated newest stop transaction ID
+serverStatus.metrics.operatorCounters.windowAccumulators.$replaceOne
+serverStatus.wiredTiger.cache.forced eviction - pages evicted that were clean time (usecs)
+serverStatus.metrics.operatorCounters.windowAccumulators.$alwaysTrue
+replSetGetStatus.term
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages written including an aggregated oldest start timestamp
+systemMetrics.netstat.TcpExt:TCPHystartDelayDetect
+serverStatus.localTime
+serverStatus.extra_info.system_time_us
+serverStatus.security.authentication.mechanisms.SCRAM-SHA-256.authenticate.received
+serverStatus.metrics.operatorCounters.windowAccumulators.$regex
+serverStatus.wiredTiger.perf.file system write latency histogram (bucket 4) - 250-499ms
+serverStatus.wiredTiger.transaction.transaction range of timestamps pinned by the oldest active read timestamp
+replSetGetStatus.optimes.lastCommittedWallTime
+replSetGetStatus.members.1.optime.ts.inc
+systemMetrics.netstat.TcpExt:SyncookiesRecv
+systemMetrics.netstat.TcpExt:TCPToZeroWindowAdv
+systemMetrics.disks.sda.io_queued_ms
+systemMetrics.vmstat.balloon_deflate
+serverStatus.storageEngine.supportsPendingDrops
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 1) - 10-49ms
+serverStatus.metrics.operatorCounters.windowAccumulators.$literal
+serverStatus.transactions.transactionsCollectionWriteCount
+serverStatus.metrics.repl.waiters.shuttingDown
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.bloom filter pages evicted from cache
+systemMetrics.netstat.Tcp:RtoMin
+serverStatus.twoPhaseCommitCoordinator.currentInSteps.waitingForDecisionAcks
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitNot
+serverStatus.network.compression.zlib.compressor.bytesOut
+serverStatus.wiredTiger.transaction.transaction checkpoint prepare most recent time (msecs)
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable restored updates from history store
+serverStatus.indexStats.count
+serverStatus.wiredTiger.cursor.cursor get value calls that return an error
+serverStatus.wiredTiger.perf.operation write latency histogram (bucket 1) - 100-249us
+serverStatus.wiredTiger.transaction.query timestamp calls
+serverStatus.metrics.query.queryFramework.aggregate.classicHybrid
+replSetGetStatus.members.0.configTerm
+systemMetrics.netstat.TcpExt:TCPWantZeroWindowAdv
+systemMetrics.disks.xvdc.io_time_ms
+serverStatus.tcmalloc.tcmalloc.current_total_thread_cache_bytes
+serverStatus.metrics.operatorCounters.windowAccumulators.$pow
+systemMetrics.netstat.TcpExt:TCPOrigDataSent
+serverStatus.locks.oplog.acquireCount.w
+serverStatus.wiredTiger.log.total log buffer size
+serverStatus.metrics.aggStageCounters.$out
+serverStatus.metrics.cursor.totalOpened.noTimeout
+serverStatus.indexBulkBuilder.bytesSpilled
+serverStatus.locks.Global.acquireCount.r
+serverStatus.metrics.operatorCounters.windowAccumulators.$toDouble
+replSetGetStatus.members.0.syncSourceId
+systemMetrics.disks.xvda.read_sectors
+replSetGetStatus.members.3.optime.ts
+systemMetrics.mounts./dev.available
+systemMetrics.mounts./sys/firmware.available
+serverStatus.wiredTiger.session.table create with import successful calls
+serverStatus.wiredTiger.thread-yield.page acquire read blocked
+serverStatus.wiredTiger.transaction.prepared transactions rolled back
+systemMetrics.netstat.TcpExt:TCPDSACKIgnoredOld
+serverStatus.metrics.repl.waiters.numSyncSourceChangesDueToSignificantlyCloserNode
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to detecting a tombstone without a timestamp ahead of the selected on disk update
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of entries skipped by cursor prev calls
+serverStatus.wiredTiger.cache.eviction walk target pages histogram - 128 and higher
+serverStatus.metrics.operatorCounters.windowAccumulators.$avg
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Internal pages currently in cache
+systemMetrics.cpu.btime
+serverStatus.wiredTiger.thread-yield.application thread snapshot refreshed for eviction
+serverStatus.metrics.operatorCounters.windowAccumulators.$sinh
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a stop transaction ID
+systemMetrics.memory.MemTotal_kb
+serverStatus.metrics.query.allowDiskUseFalse
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.open cursor count
+serverStatus.wiredTiger.block-manager.bytes read via system call API
+serverStatus.wiredTiger.session.flush_tier tables switched
+serverStatus.wiredTiger.session.table create successful calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$toObjectId
+serverStatus.metrics.query.queryFramework.find.cqf
+serverStatus.readConcernCounters.nonTransactionOps.noneInfo.implicitDefault.local
+serverStatus.wiredTiger.cache.pages written requiring in-memory restoration
+serverStatus.wiredTiger.reconciliation.records written including a start transaction ID
+systemMetrics.disks.xvdh.read_sectors
+serverStatus.logicalSessionRecordCache.activeSessionsCount
+serverStatus.wiredTiger.cursor.Total number of deleted pages skipped during tree walk
+serverStatus.metrics.query.queryFramework.find.classic
+serverStatus.transactions.retriedStatementsCount
+serverStatus.wiredTiger.log.log bytes of payload data
+serverStatus.wiredTiger.concurrentTransactions.monitor.available
+replSetGetStatus.members.2.configTerm
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction walks reached end of tree
+serverStatus.electionMetrics.stepUpCmd.successful
+serverStatus.wiredTiger.cache.history store table insert calls that returned restart
+serverStatus.metrics.commands.collMod.validator.failed
+serverStatus.metrics.getLastError.wtimeouts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.eviction gave up due to detecting a disk value without a timestamp behind the last update on the chain
+serverStatus.wiredTiger.cursor.cursor cache calls that return an error
+serverStatus.wiredTiger.log.slot join calls found active slot closed
+serverStatus.wiredTiger.session.table verify failed calls
+serverStatus.metrics.operatorCounters.windowAccumulators.$in
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table resolved updates without timestamps that lose their durable timestamp
+systemMetrics.memory.Active(file)_kb
+systemMetrics.netstat.TcpExt:TCPOFODrop
+serverStatus.wiredTiger.cursor.cursor update value size change
+serverStatus.wiredTiger.perf.operation read latency histogram (bucket 1) - 100-249us
+serverStatus.wiredTiger.reconciliation.pages written including at least one stop transaction ID
+serverStatus.wiredTiger.oplog.visibility timestamp
+replSetGetStatus.members.2.state
+serverStatus.indexBuilds.phases.waitForCommitQuorum
+serverStatus.scramCache.SCRAM-SHA-256.count
+serverStatus.wiredTiger.cursor.cursor close calls that result in cache
+serverStatus.metrics.operatorCounters.windowAccumulators.$tsSecond
+serverStatus.metrics.operatorCounters.windowAccumulators.$where
+systemMetrics.netstat.Tcp:InErrs
+serverStatus.wiredTiger.reconciliation.page reconciliation calls that resulted in values with timestamps
+serverStatus.metrics.operatorCounters.windowAccumulators.$sin
+serverStatus.metrics.query.retryableInternalTransactionCount
+serverStatus.wiredTiger.transaction.transaction range of timestamps currently pinned
+serverStatus.mem.bits
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds search early exit
+serverStatus.wiredTiger.session.table truncate failed calls
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.leaf page key bytes discarded using prefix compression
+systemMetrics.disks.xvdh.readsystemMetrics.memory.SwapFree_kbs_merged
+serverStatus.asserts.user
+local.oplog.rs.stats.storageStats.count
+systemMetrics.netstat.TcpExt:TCPFastOpenActiveFail
+systemMetrics.netstat.TcpExt:TcpDuplicateDataRehash
+systemMetrics.end
+serverStatus.network.tcpFastOpen.clientSupported
+serverStatus.metrics.operatorCounters.windowAccumulators.$degreesToRadians
+serverStatus.readConcernCounters.transactionOps.majority
+serverStatus.metrics.repl.waiters.numTimesChoseSame
+replSetGetStatus.heartbeatIntervalMillis
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.column-store variable-size leaf pages
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Minimum on-disk page image size seen
+systemMetrics.netstat.TcpExt:TCPChallengeACK
+systemMetrics.disks.xvdc.io_in_progress
+serverStatus.metrics.changeStreams.largeEventsSplit
+serverStatus.wiredTiger.cache.in-memory page passed criteria to be split
+serverStatus.wiredTiger.capacity.background fsync time (msecs)
+serverStatus.metrics.aggStageCounters.$skip
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spilledRecords
+serverStatus.metrics.aggStageCounters.$geoNear
+replSetGetStatus.members.0.configVersion
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.btree skipped by compaction as process would not reduce size
+systemMetrics.disks.sda.read_sectors
+systemMetrics.mounts./dev/shm.free
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.records written including a start durable timestamp
+systemMetrics.netstat.TcpExt:TCPFromZeroWindowAdv
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 3) - 100-249ms
+serverStatus.wiredTiger.transaction.transaction range of IDs currently pinned
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitsAllSet
+systemMetrics.mounts./proc/kcore.available
+serverStatus.logicalSessionRecordCache.sessionsCollectionJobCount
+serverStatus.metrics.aggStageCounters.$sample
+serverStatus.metrics.operatorCounters.windowAccumulators.$first
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.classicCount
+systemMetrics.netstat.TcpExt:TCPFastOpenPassiveAltKey
+serverStatus.wiredTiger.log.log records compressed
+serverStatus.wiredTiger.transaction.rollback to stable restored updates from history store
+serverStatus.metrics.aggStageCounters.$documents
+systemMetrics.netstat.Ip:OutDiscards
+systemMetrics.mounts./proc/scsi.available
+replSetGetStatus.members.1.syncSourceId
+replSetGetStatus.members.2.optimeDurable.ts
+serverStatus.electionMetrics.numCatchUps
+serverStatus.wiredTiger.block-manager.bytes read
+serverStatus.wiredTiger.cursor.Total number of times cursor fails to temporarily release pinned page to encourage eviction of hot or large page
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Pages that could not be queued for eviction
+serverStatus.metrics.aggStageCounters.$mergeCursors
+serverStatus.metrics.operatorCounters.windowAccumulators.$arrayElemAt
+serverStatus.metrics.operatorCounters.windowAccumulators.$divide
+serverStatus.metrics.operatorCounters.windowAccumulators.$max
+systemMetrics.mounts./data.free
+systemMetrics.disks.sda.reads
+serverStatus.batchedDeletes.stagedSizeBytes
+serverStatus.wiredTiger.cache.history store table on-disk size
+serverStatus.wiredTiger.cache.locate a random in-mem ref by examining all entries on the root page
+serverStatus.wiredTiger.log.log records too small to compress
+replSetGetStatus.optimes.durableOpTime.ts
+systemMetrics.netstat.TcpExt:TCPDelivered
+serverStatus.asserts.msg
+serverStatus.wiredTiger.block-cache.number of hits
+serverStatus.wiredTiger.data-handle.connection sweeps skipped due to checkpoint gathering handles
+serverStatus.metrics.operatorCounters.windowAccumulators.$text
+serverStatus.metrics.ttl.subPasses
+serverStatus.network.serviceExecutors.fixed.clientsWaitingForData
+serverStatus.metrics.aggStageCounters.$_internalSearchIdLookup
+systemMetrics.netstat.IpExt:OutBcastPkts
+serverStatus.wiredTiger.cache.bytes allocated for updates
+serverStatus.metrics.operatorCounters.windowAccumulators.$hour
+systemMetrics.netstat.TcpExt:TCPSynRetrans
+serverStatus.electionMetrics.numStepDownsCausedByHigherTerm
+serverStatus.wiredTiger.reconciliation.page reconciliation calls that resulted in values with prepared transaction metadata
+serverStatus.metrics.operatorCounters.windowAccumulators.$setDifference
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of times cursor temporarily releases pinned page to encourage eviction of hot or large page
+systemMetrics.netstat.TcpExt:TCPFastRetrans
+systemMetrics.netstat.Ip:Forwarding
+serverStatus.wiredTiger.lock.dhandle write lock acquisitions
+systemMetrics.memory.Inactive_kb
+systemMetrics.disks.xvdh.io_in_progress
+systemMetrics.disks.xvdb.read_time_ms
+serverStatus.queryAnalyzers.totalSampledReadsBytes
+serverStatus.metrics.queryStats.numRateLimitedRequests
+serverStatus.network.numRequests
+serverStatus.opLatencies.reads.latency
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.object compaction
+serverStatus.queryAnalyzers.totalSampledWritesBytes
+serverStatus.metrics.aggStageCounters.$listLocalSessions
+serverStatus.metrics.network.totalTimeToFirstNonAuthCommandMillis
+serverStatus.metrics.operatorCounters.windowAccumulators.$trunc
+serverStatus.metrics.query.queryFramework.aggregate.cqf
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bounds next called on an unpositioned cursor
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable restored tombstones from history store
+systemMetrics.netstat.IpExt:InCsumErrors
+serverStatus.opcountersRepl.insert
+serverStatus.repl.lastWrite.majorityOpTime.ts
+serverStatus.wiredTiger.block-cache.lookups
+serverStatus.metrics.operatorCounters.windowAccumulators.$dateTrunc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Total number of pages currently in cache
+serverStatus.batchedDeletes.refetchesDueToYield
+serverStatus.locks.ReplicationStateTransition.timeAcquiringMicros.w
+serverStatus.wiredTiger.log.pre-allocated log files prepared
+serverStatus.wiredTiger.perf.file system read latency histogram (bucket 5) - 500-999ms
+serverStatus.wiredTiger.snapshot-window-settings.pinned timestamp requests
+serverStatus.metrics.aggStageCounters.$_internalShredDocuments
+serverStatus.metrics.operatorCounters.windowAccumulators.$function
+serverStatus.wiredTiger.log.slot join calls did not yield
+serverStatus.metrics.operatorCounters.windowAccumulators.$stdDevSamp
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.leaf page multi-block writes
+systemMetrics.netstat.TcpExt:TCPDSACKRecv
+serverStatus.opcounters.update
+systemMetrics.netstat.IpExt:InMcastPkts
+systemMetrics.disks.xvdb.write_time_ms
+serverStatus.storageEngine.persistent
+serverStatus.metrics.query.updateOneOpStyleBroadcastWithExactIDCount.spillToDisk
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.rollback to stable history store keys that would have been swept in non-dryrun mode
+systemMetrics.cpu.system_ms
+systemMetrics.netstat.TcpExt:PAWSEstab
+systemMetrics.mounts./data.available
+serverStatus.shardSplits.totalCommitted
+serverStatus.metrics.operatorCounters.windowAccumulators.$sortArray
+systemMetrics.netstat.TcpExt:TCPReqQFullDrop
+serverStatus.wiredTiger.cursor.cursor insert calls that return an error
+serverStatus.metrics.aggStageCounters.$_internalChangeStreamCheckTopologyChange
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor bound calls that return an error
+serverStatus.wiredTiger.lock.read timestamp queue lock application thread time waiting (usecs)
+serverStatus.wiredTiger.reconciliation.approximate byte size of transaction IDs in pages written
+serverStatus.wiredTiger.session.table create with import failed calls
+serverStatus.metrics.repl.waiters.notPrimaryLegacyUnacknowledgedWrites
+serverStatus.metrics.repl.waiters.notPrimaryUnacknowledgedWrites
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.the number of times reverse modify inserted to history store
+serverStatus.electionMetrics.numCatchUpsFailedWithError
+serverStatus.network.tcpFastOpen.kernelSetting
+serverStatus.wiredTiger.cursor.cursor next calls that return an error
+transportLayerStats.listenerSocketBacklogQueueDepths.1.127.0.0.1:31569
+systemMetrics.netstat.IpExt:InBcastPkts
+systemMetrics.netstat.Ip:FragCreates
+systemMetrics.disks.xvdc.reads
+serverStatus.metrics.queryStats.numQueryStatsStoreWriteErrors
+serverStatus.wiredTiger.block-cache.cached blocks updated
+serverStatus.wiredTiger.thread-yield.page acquire busy blocked
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.modify key and value bytes affected
+serverStatus.wiredTiger.log.log release advances write LSN
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.history store table truncations to remove an unstable update that would have happened in non-dryrun mode
+serverStatus.mirroredReads.processedAsSecondary
+serverStatus.network.compression.zstd.decompressor.bytesOut
+replSetGetStatus.members.0.optime.ts.inc
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor next calls that skip due to a globally visible history store tombstone
+serverStatus.flowControl.isLagged
+serverStatus.metrics.operatorCounters.windowAccumulators.$bitXor
+systemMetrics.pressure.cpu.full.totalMicros
+serverStatus.flowControl.isLaggedTimeMicros
+serverStatus.transactions.totalCommitted
+serverStatus.wiredTiger.cache.eviction calls to get a page
+serverStatus.wiredTiger.cache.forced eviction - pages selected count
+serverStatus.metrics.operatorCounters.windowAccumulators.$asin
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor remove calls that return an error
+serverStatus.trafficRecording.running
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor reopen calls that return an error
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.insert key and value bytes
+systemMetrics.netstat.IpExt:InCEPkts
+serverStatus.logicalSessionRecordCache.lastTransactionReaperJobEntriesCleanedUp
+serverStatus.wiredTiger.cursor.cursor bounds search early exit
+serverStatus.extra_info.involuntary_context_switches
+serverStatus.repl.lastWrite.lastWriteDate
+serverStatus.wiredTiger.capacity.time waiting during read (usecs)
+replSetGetStatus.syncSourceId
+systemMetrics.disks.xvdb.io_time_ms
+serverStatus.electionMetrics.catchUpTakeover.successful
+serverStatus.wiredTiger.cache.checkpoint blocked page eviction
+serverStatus.wiredTiger.cache.history store table truncations that would have happened in non-dryrun mode
+serverStatus.wiredTiger.reconciliation.pages written including an aggregated newest stop timestamp
+serverStatus.wiredTiger.transaction.transaction range of timestamps pinned by a checkpoint
+serverStatus.metrics.ttl.deletedDocuments
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.cursor next random calls that return an error
+systemMetrics.netstat.Tcp:InSegs
+serverStatus.wiredTiger.cache.pages queued for urgent eviction
+serverStatus.wiredTiger.log.written slots coalesced
+serverStatus.oplogTruncation.truncateCount
+serverStatus.locks.Collection.acquireCount.w
+serverStatus.tenantMigrations.currentMigrationsReceiving
+serverStatus.metrics.repl.waiters.readersCreated
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.internal pages split during eviction
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.pages skipped during tree walk
+local.oplog.rs.stats.storageStats.scaleFactor
+serverStatus.wiredTiger.log.log sync_dir time duration (usecs)
+serverStatus.metrics.aggStageCounters.$search
+replSetGetStatus.members.3.optime.ts.inc
+systemMetrics.netstat.TcpExt:TCPAbortFailed
+serverStatus.wiredTiger.thread-yield.page acquire locked blocked
+serverStatus.metrics.aggStageCounters.$_internalSetWindowFields
+serverStatus.metrics.query.externalRetryableWriteCount
+systemMetrics.disks.sdb.read_time_ms
+systemMetrics.vmstat.pgmajfault
+serverStatus.readConcernCounters.nonTransactionOps.noneInfo.CWRC.local
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.reserve calls
+systemMetrics.mounts./etc/hostname.available
+serverStatus.network.serviceExecutors.fixed.clientsRunning
+serverStatus.repl.primaryOnlyServices.TenantMigrationRecipientService.numInstances
+serverStatus.wiredTiger.cache.history store table resolved updates without timestamps that lose their durable timestamp
+serverStatus.metrics.aggStageCounters.$_addReshardingResumeId
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.in-memory page passed criteria to be split
+systemMetrics.cpu.steal_ms
+systemMetrics.netstat.TcpExt:TCPTSReorder
+serverStatus.wiredTiger.capacity.bytes written total
+replSetGetStatus.members.3.optimeDurable.ts
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.number of blocks with compress ratio smaller than 32
+serverStatus.wiredTiger.cursor.cursor next calls that skip greater than 1 and fewer than 100 entries
+serverStatus.uptimeMillis
+systemMetrics.netstat.Tcp:CurrEstab
+replSetGetStatus.members.2.lastHeartbeat
+serverStatus.wiredTiger.cache.eviction server candidate queue empty when topping up
+serverStatus.metrics.aggStageCounters.$fill
+local.oplog.rs.stats.storageStats.wiredTiger.transaction.Entries in the root page
+serverStatus.security.authentication.mechanisms.MONGODB-X509.authenticate.successful
+serverStatus.wiredTiger.connection.auto adjusting condition wait raced to update timeout and skipped updating
+serverStatus.wiredTiger.cache.pages evicted by application threads
+serverStatus.wiredTiger.cursor.cursors reused from cache
+serverStatus.metrics.aggStageCounters.$_internalAllCollectionStats

@@ -1,0 +1,5 @@
+./vendor
+diagnostic.data/
+.idea
+.DS_Store
+influxdb_data/
