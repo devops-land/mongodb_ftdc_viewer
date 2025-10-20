@@ -83,4 +83,4 @@ docker-compose build
 docker-compose up -d
 
 # Tail the logs of the metrics-processor service
-docker attach big-hole-ftdc-processor-1
+docker attach mongodb_ftdc_viewer-ftdc-processor-1
