@@ -17,6 +17,8 @@ github.com/influxdata/line-protocol v0.0.0-20200327222509-2487e7298839 h1:W9WBk7
 github.com/influxdata/line-protocol v0.0.0-20200327222509-2487e7298839/go.mod h1:xaLFMmpvUxqXtVkUJfg9QmT88cDaCJ3ZKgdZ78oO8Qo=
 github.com/jodevsa/ftdc v0.0.0-20251017163357-0052ef54e15a h1:oXtx4/QgpLKP2cXZfeJGingeLWIdykQDMAaxkPha7iY=
 github.com/jodevsa/ftdc v0.0.0-20251017163357-0052ef54e15a/go.mod h1:9XF9HLY2e4CmTVlWOkfvXiBUggVXMM4QNJIS2Xkzca4=
+github.com/jodevsa/ftdc v0.0.0-20251020210806-fb8d2d92f7c3 h1:x66LwZdQ7kbm2SpnJ/T9zzLaI72r3lMOOtOcwqX1lTM=
+github.com/jodevsa/ftdc v0.0.0-20251020210806-fb8d2d92f7c3/go.mod h1:9XF9HLY2e4CmTVlWOkfvXiBUggVXMM4QNJIS2Xkzca4=
 github.com/juju/gnuflag v0.0.0-20171113085948-2ce1bb71843d/go.mod h1:2PavIy+JPciBPrBUjwbNvtwB6RQlve+hkpll6QSNmOE=
 github.com/mongodb/ftdc v0.0.0-20250225160627-a5c4e050d9d8 h1:w2m+daUo9WRL2vMBrnWWGY1UebHXEBsROgL9BhQt0cY=
 github.com/mongodb/ftdc v0.0.0-20250225160627-a5c4e050d9d8/go.mod h1:lPE03ve1J9f3hJMgRwuo1SMCqbBH1wl8kBzMq08oiZw=
