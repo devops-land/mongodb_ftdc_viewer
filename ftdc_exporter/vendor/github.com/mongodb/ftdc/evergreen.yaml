@@ -1,0 +1,151 @@
+#######################################
+#         YAML Templates              #
+#######################################
+variables:
+  - &run-build
+    # runs a build operation. The task name in evergreen should
+    # correspond to a make target for the build operation.
+    name: test
+    must_have_test_results: true
+    commands:
+      - func: run-make
+        vars: { target: "${task_name}" }
+
+#######################################
+#              Functions              #
+#######################################
+functions:
+  get-project-and-modules:
+    - command: git.get_project
+      type: system
+      params:
+        directory: ftdc
+    - command: subprocess.exec
+      type: setup
+      params:
+        working_dir: ftdc
+        binary: make
+        args: ["mod-tidy"]
+        include_expansions_in_env: ["GOROOT"]
+  parse-results:
+    command: gotest.parse_files
+    type: setup
+    params:
+      files:
+        - "ftdc/build/output.*"
+  run-make:
+    command: subprocess.exec
+    type: test
+    params:
+      working_dir: ftdc
+      binary: make
+      args: ["${make_args|}", "${target}"]
+      include_expansions_in_env: ["GOROOT", "RACE_DETECTOR", "TEST_TIMEOUT"]
+
+#######################################
+#                Tasks                #
+#######################################
+tasks:
+  - <<: *run-build
+    tags: ["test"]
+    name: test-ftdc
+  - <<: *run-build
+    tags: ["test"]
+    name: test-events
+  - <<: *run-build
+    tags: ["test"]
+    name: test-hdrhist
+  - <<: *run-build
+    tags: ["test"]
+    name: test-metrics
+  - <<: *run-build
+    tags: ["test"]
+    name: test-util
+
+  - <<: *run-build
+    tags: ["lint"]
+    name: lint-ftdc
+  - <<: *run-build
+    tags: ["lint"]
+    name: lint-events
+  - <<: *run-build
+    tags: ["lint"]
+    name: lint-hdrhist
+  - <<: *run-build
+    tags: ["lint"]
+    name: lint-metrics
+  - <<: *run-build
+    tags: ["lint"]
+    name: lint-util
+
+  - name: verify-mod-tidy
+    commands:
+      - command: git.get_project
+        type: system
+        params:
+          directory: ftdc
+      - func: run-make
+        vars: { target: "${task_name}" }
+
+task_groups:
+  - name: lintGroup
+    tasks: [ ".lint" ]
+    max_hosts: 2
+    setup_group:
+      - func: get-project-and-modules
+    setup_task:
+      - func: run-make
+        vars: { target: "clean-results" }
+    teardown_task:
+      - func: parse-results
+  - name: testGroup
+    tasks: [ ".test" ]
+    max_hosts: 2
+    setup_group_can_fail_task: true
+    share_processes: true
+    setup_group:
+      - func: get-project-and-modules
+    setup_task:
+      - func: run-make
+        vars: { target: "clean-results" }
+    teardown_task:
+      - func: parse-results
+
+#######################################
+#           Buildvariants             #
+#######################################
+buildvariants:
+  - name: lint
+    display_name: Lint
+    expansions:
+      GOROOT: /opt/golang/go1.24
+    run_on:
+      - ubuntu2204-small
+    tasks:
+      - lintGroup
+      - verify-mod-tidy
+
+  - name: ubuntu
+    display_name: Ubuntu 22.04
+    expansions:
+      GOROOT: /opt/golang/go1.24
+      RACE_DETECTOR: true
+    run_on:
+      - ubuntu2204-small
+    tasks: [ "testGroup" ]
+
+  - name: macos
+    display_name: macOS
+    expansions:
+      GOROOT: /opt/golang/go1.24
+    run_on:
+      - macos-1100-arm64
+    tasks: [ "testGroup" ]
+
+  - name: windows
+    display_name: Windows
+    run_on:
+      - windows-vsCurrent-small
+    expansions:
+      GOROOT: C:/golang/go1.24
+    tasks: [ "testGroup" ]
