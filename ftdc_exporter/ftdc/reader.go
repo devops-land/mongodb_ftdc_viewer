@@ -15,6 +15,8 @@ func readMetadata(ctx context.Context, path string) (map[string]interface{}, err
 	}
 
 	cs := ftdc.ReadChunks(ctx, file)
+	defer cs.Close()
+
 	metadata := make(map[string]interface{})
 	for cs.Next() {
 		md := cs.Chunk().GetMetadata()

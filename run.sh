@@ -3,7 +3,7 @@
 
 # default configuration
 export PARALLEL=10
-export BATCH_SIZE=50
+export BATCH_SIZE=200
 export INFLUX_DB_DATA_DIRECTORY=/tmp/influxdb_data
 
 # --- Parse CLI args ---

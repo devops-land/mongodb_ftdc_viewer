@@ -4,6 +4,10 @@ func (it *FTDCDataIterator) NormalisedDocument(includedPatterns map[string]struc
 	return normalizeDocument(it.doc, includedPatterns)
 }
 
+func (it *FTDCDataIterator) Close() {
+	it.it.Close()
+}
+
 func (it *FTDCDataIterator) Next() bool {
 	for it.it.Next() {
 		if it.it.Metadata() != nil {

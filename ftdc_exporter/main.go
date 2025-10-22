@@ -11,10 +11,37 @@ import (
 	"io"
 	"io/fs"
 	"log"
+	"os"
+	"os/signal"
 	"path/filepath"
+	"sort"
 	"sync/atomic"
+	"syscall"
 	"time"
 )
+
+func buildGrafanaURL(ctx context.Context, cfg *config.Config) (error, string) {
+	client := influx.NewClient(ctx, influx.Config{
+		Org:         cfg.InfluxOrg,
+		Bucket:      cfg.InfluxBucket,
+		Url:         cfg.InfluxURL,
+		Token:       cfg.InfluxToken,
+		UseGzip:     cfg.InfluxUseGZip,
+		Measurement: cfg.InfluxMeasurement,
+	})
+	defer client.Close()
+	err, earliest := client.FetchEarliestTimestamp()
+	if err != nil {
+		return err, ""
+	}
+
+	err, latest := client.FetchLatestTimestamp()
+	if err != nil {
+		return err, ""
+	}
+	baseURL := "http://localhost:3001/d/ddnw277huiv40ae/ftdc-dashboard"
+	return nil, fmt.Sprintf("%s?from=%s&to=%s&timezone=UTC", baseURL, earliest, latest)
+}
 
 func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic.Int64) error {
 	ctx := context.Background()
@@ -35,8 +62,9 @@ func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic
 
 	batches, errs := ftdc.StreamBatches(ctx, absInputPath, cfg.MetricsIncludeFile, cfg.BatchSize, cfg.BatchBuffer)
 	total := 0
-
-	logging.Info("Processing: %s", absInputPath)
+	if cfg.Debug {
+		logging.Info("Processing: %s", absInputPath)
+	}
 	for batch := range batches {
 		var points []*influx.Point
 		for _, doc := range batch.Items {
@@ -57,9 +85,9 @@ func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic
 	if err := <-errs; err != nil && err != io.EOF {
 		fmt.Println("stream error:", err)
 	}
-
-	logging.Info("Completed processing %s", absInputPath)
-
+	if cfg.Debug {
+		logging.Info("Completed processing %s", absInputPath)
+	}
 	return nil
 }
 
@@ -78,7 +106,8 @@ func main() {
 			select {
 			case <-ticker.C:
 				duration := time.Duration(processed.Load()) * time.Second
-				fmt.Printf("\rIngested %-20s of diagnostics metrics", duration)
+				timestamp := time.Now().Format("15:04:05")
+				fmt.Printf("\r[%s] Ingested %-15s of diagnostics metrics", timestamp, duration)
 			case <-done:
 				return
 			}
@@ -108,6 +137,8 @@ func main() {
 
 	g, ctx := errgroup.WithContext(context.Background())
 	g.SetLimit(cfg.Parallel)
+	// sort files in ascending order
+	sort.Strings(files)
 
 	logging.Info("%d files queued for processing", len(files))
 	for _, f := range files {
@@ -125,5 +156,21 @@ func main() {
 		fmt.Println("failed:", err)
 	}
 
-	logging.Info("finished process all the %d files!", len(files))
+	// stop the periodic log updates
+	close(done)
+
+	err, grafanaUrl := buildGrafanaURL(ctx, cfg)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	logging.Info("Metrics available for analysis on:\n\n %s\n", grafanaUrl)
+	if cfg.WaitForever {
+		ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+		defer stop()
+
+		fmt.Println("Press Ctrl+C to exit.")
+		<-ctx.Done()
+		fmt.Println("Received shutdown signal.")
+	}
 }

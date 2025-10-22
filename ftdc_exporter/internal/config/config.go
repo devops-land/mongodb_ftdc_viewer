@@ -21,6 +21,7 @@ type Config struct {
 	BatchBuffer        int
 	Debug              bool
 	InfluxMeasurement  string
+	WaitForever        bool
 }
 
 // ParseFlags reads and validates CLI flags, returning a Config instance.
@@ -39,6 +40,7 @@ func ParseFlags() *Config {
 	flag.IntVar(&cfg.BatchBuffer, "batch-buffer", 1, "Number of batches to queue before blocking")
 	flag.StringVar(&cfg.MetricsIncludeFile, "metrics-include-file", "", "Number of batches to queue before blocking")
 	flag.BoolVar(&cfg.Debug, "debug", false, "Enable debug logging")
+	flag.BoolVar(&cfg.WaitForever, "wait-forever", true, "Wait indefinitely")
 
 	flag.Parse()
 
@@ -63,6 +65,8 @@ func (cfg *Config) Print() {
 	fmt.Printf("%-20s : %d\n", "Parallel Files", cfg.Parallel)
 	fmt.Printf("%-20s : %d\n", "Batch Size", cfg.BatchSize)
 	fmt.Printf("%-20s : %d\n", "Batch Buffer", cfg.BatchBuffer)
+	fmt.Printf("%-20s : %t\n", "Wait Forever", cfg.WaitForever)
+	fmt.Printf("%-20s : %t\n", "Debug Mode", cfg.Debug)
 	fmt.Println("------------------------------------------------------------")
 
 }

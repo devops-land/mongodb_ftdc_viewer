@@ -40,6 +40,7 @@ func streamFTDCMetricsInBatches(ctx context.Context, path string, metricsInclude
 	go func() {
 		defer close(out)
 		defer close(errc)
+		defer iter.Close()
 
 		for {
 			sb := StreamBatch{
