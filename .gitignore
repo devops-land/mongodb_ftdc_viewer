@@ -3,3 +3,4 @@ diagnostic.data/
 .idea
 .DS_Store
 influxdb_data/
+./ftdc_exporter/vendor
