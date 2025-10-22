@@ -9,7 +9,7 @@ export INFLUX_ADMIN_PASSWORD="$(uuidgen)"
 export INFLUX_API_TOKEN="$(uuidgen)"
 export GRAFANA_ADMIN_PASSWORD="$(uuidgen)"
 export INFLUX_ORG="org"
-export INFLUX_BUCKET="ftdc"
+export INFLUX_BUCKET="bucket"
 
 # --- Parse CLI args ---
 while [[ "$#" -gt 0 ]]; do

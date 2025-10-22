@@ -28,7 +28,7 @@ services:
       - GF_AUTH_DISABLE_LOGIN_FORM=false
       - INFLUX_API_TOKEN=${INFLUX_API_TOKEN}
       - INFLUX_ORG=${INFLUX_ORG}
-      - BUCKET=${INFLUX_BUCKET}
+      - INFLUX_BUCKET=${INFLUX_BUCKET}
     links:
       - influxdb
     volumes:
