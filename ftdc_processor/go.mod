@@ -7,7 +7,6 @@ toolchain go1.24.3
 require (
 	github.com/evergreen-ci/birch v0.0.0-20191213201306-f4dae6f450a2
 	github.com/influxdata/influxdb-client-go/v2 v2.14.0
-	github.com/jodevsa/ftdc v0.0.0-20251020210806-fb8d2d92f7c3
 	github.com/mongodb/ftdc v0.0.0-20250225160627-a5c4e050d9d8
 	golang.org/x/sync v0.9.0
 )

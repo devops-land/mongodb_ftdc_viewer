@@ -2,7 +2,7 @@ package ftdc
 
 import (
 	"context"
-	"github.com/jodevsa/ftdc"
+	"github.com/mongodb/ftdc"
 	"io"
 	"os"
 )

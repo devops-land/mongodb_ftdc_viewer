@@ -3,7 +3,7 @@ package ftdc
 import (
 	"context"
 	"github.com/evergreen-ci/birch"
-	"github.com/jodevsa/ftdc"
+	"github.com/mongodb/ftdc"
 )
 
 type FTDCDataIterator struct {
