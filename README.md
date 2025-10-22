@@ -3,7 +3,7 @@ mongodb_ftdc_viewer is a reimagined and performance-focused evolution of zelmari
 
 It provides a fast, reliable way to process MongoDB diagnostics data and push it to InfluxDB at high speed. Metrics can then be explored through a Docker-hosted Grafana instance.
 
-![Screenshoot](https://github.com/devops-land/mongodb_ftdc_viewer/blob/main/ftdc-processor.png?raw=true)
+![Screenshoot](https://github.com/devops-land/mongodb_ftdc_viewer/blob/main/ftdc_exporter.png?raw=true)
 
 ## Prerequisites
 - Docker and Docker-compose

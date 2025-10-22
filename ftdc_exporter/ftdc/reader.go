@@ -27,13 +27,8 @@ func readMetadata(ctx context.Context, path string) (map[string]interface{}, err
 }
 
 func readFTDCData(ctx context.Context, r io.Reader) *FTDCDataIterator {
-
-	iter := &FTDCDataIterator{
+	return &FTDCDataIterator{
 		ctx: ctx,
 		it:  ftdc.ReadMetrics(ctx, r),
 	}
-
-	print(iter.it.Metadata().String())
-
-	return iter
 }
