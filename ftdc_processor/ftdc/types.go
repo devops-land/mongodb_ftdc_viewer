@@ -14,6 +14,5 @@ type FTDCDataIterator struct {
 }
 
 type StreamBatch struct {
-	Items    []map[string]interface{}
-	Metadata map[string]interface{}
+	Items []map[string]interface{}
 }

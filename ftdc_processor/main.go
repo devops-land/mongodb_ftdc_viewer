@@ -17,30 +17,42 @@ import (
 	"time"
 )
 
+func getFTDCFileInfluxTags(ctx context.Context, path string) (map[string]string, error) {
+	metadata, err := ftdc.ReadMetadata(ctx, path)
+
+	if err != nil {
+		return map[string]string{}, err
+	}
+
+	hostname := metadata["doc"].(map[string]interface{})["hostInfo"].(map[string]interface{})["system"].(map[string]interface{})["hostname"].(string)
+	version := metadata["doc"].(map[string]interface{})["buildInfo"].(map[string]interface{})["version"].(string)
+
+	return map[string]string{
+		"hostname": hostname,
+		"version":  version,
+	}, nil
+}
+
 func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic.Int64) error {
-	client := influxdb2.NewClientWithOptions(cfg.InfluxURL, cfg.InfluxToken, influxdb2.DefaultOptions().SetPrecision(time.Millisecond).SetMaxRetries(5).SetMaxRetryInterval(10000))
+	client := influxdb2.NewClientWithOptions(cfg.InfluxURL, cfg.InfluxToken, influxdb2.DefaultOptions().SetUseGZip(cfg.InfluxUseGZip).SetPrecision(time.Second).SetMaxRetries(5).SetMaxRetryInterval(10000))
 	defer client.Close()
+
 	w := client.WriteAPIBlocking(cfg.InfluxOrg, cfg.InfluxBucket)
-	// Create an iterator over the FTDC data
 	ctx := context.Background()
+
+	tags, err := getFTDCFileInfluxTags(ctx, absInputPath)
+	if err != nil {
+		return err
+	}
 
 	batches, errs := ftdc.StreamBatches(ctx, absInputPath, cfg.MetricsIncludeFile, cfg.BatchSize, cfg.BatchBuffer)
 	total := 0
 
 	logging.Info("Processing: %s", absInputPath)
 	for batch := range batches {
-		hostname := batch.Metadata["doc"].(map[string]interface{})["hostInfo"].(map[string]interface{})["system"].(map[string]interface{})["hostname"].(string)
-		version := batch.Metadata["doc"].(map[string]interface{})["buildInfo"].(map[string]interface{})["version"].(string)
-
-		tags := map[string]string{
-			"hostname": hostname,
-			"version":  version,
-		}
-
 		points := []*write.Point{}
 
 		for _, doc := range batch.Items {
-
 			t := time.UnixMilli(doc["start"].(int64))
 			points = append(points, influxdb2.NewPoint("ftdc", tags, doc, t))
 		}
@@ -111,7 +123,6 @@ func main() {
 	g.SetLimit(cfg.Parallel)
 
 	logging.Info("%d files queued for processing", len(files))
-
 	for _, f := range files {
 		g.Go(func() error {
 			select {

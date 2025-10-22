@@ -3,14 +3,43 @@ package ftdc
 import (
 	"github.com/evergreen-ci/birch"
 	"github.com/evergreen-ci/birch/bsontype"
-	"regexp"
+	"strings"
 	"time"
 )
 
-var diskMetricsPattern = regexp.MustCompile(`^systemMetrics\.disks\..*\.(io_in_progress|io_queued_ms|io_time_ms|read_sectors|read_time_ms|reads|reads_merged|write_sectors|write_time_ms|writes|writes_merged)$`)
-var mountMetricsPattern = regexp.MustCompile(`^systemMetrics\.mounts\.(\/(?:[^\/]+\/?)*)\.(available|capacity|free)$`)
+func isMountMetric(key string) bool {
+	var p = "systemMetrics.mounts."
+	if !strings.HasPrefix(key, p) {
+		return false
+	}
+	for _, field := range []string{
+		"available", "capacity", "free",
+	} {
+		if strings.Contains(key, field) {
+			return true
+		}
+	}
+	return false
+}
 
-func isIncluded(key string, includedPatterns []string) bool {
+func isDiskMetric(key string) bool {
+	var p = "systemMetrics.disks."
+	if !strings.HasPrefix(key, p) {
+		return false
+	}
+	for _, field := range []string{
+		"io_in_progress", "io_queued_ms", "io_time_ms",
+		"read_sectors", "read_time_ms", "reads", "reads_merged",
+		"write_sectors", "write_time_ms", "writes", "writes_merged",
+	} {
+		if strings.Contains(key, field) {
+			return true
+		}
+	}
+	return false
+}
+
+func isIncluded(key string, includedPatterns map[string]struct{}) bool {
 
 	if len(includedPatterns) == 0 {
 		return true
@@ -20,22 +49,18 @@ func isIncluded(key string, includedPatterns []string) bool {
 		return true
 	}
 
-	for _, pattern := range includedPatterns {
-		if pattern == key {
-			return true
-		}
+	if _, ok := includedPatterns[key]; ok {
+		return true
 	}
 
-	if diskMetricsPattern.MatchString(key) {
+	if isDiskMetric(key) || isMountMetric(key) {
 		return true
 	}
-	if mountMetricsPattern.MatchString(key) {
-		return true
-	}
+
 	return false
 }
 
-func normalizeDocument(document *birch.Document, includedPatterns []string) map[string]interface{} {
+func normalizeDocument(document *birch.Document, includedPatterns map[string]struct{}) map[string]interface{} {
 	normalized := make(map[string]interface{})
 	iter := document.Iterator()
 
@@ -50,7 +75,7 @@ func normalizeDocument(document *birch.Document, includedPatterns []string) map[
 	return normalized
 }
 
-func normalizeValue(val *birch.Value, includedPatterns []string) interface{} {
+func normalizeValue(val *birch.Value, includedPatterns map[string]struct{}) interface{} {
 	switch val.Type() {
 	case bsontype.Double:
 		return val.Double()

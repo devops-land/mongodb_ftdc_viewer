@@ -13,6 +13,7 @@ type Config struct {
 	InfluxURL          string
 	InfluxToken        string
 	InfluxOrg          string
+	InfluxUseGZip      bool
 	InfluxBucket       string
 	MetricsIncludeFile string
 	Parallel           int
@@ -27,12 +28,13 @@ func ParseFlags() *Config {
 
 	flag.StringVar(&cfg.InputDir, "input-dir", "", "Path to the directory containing FTDC files (required)")
 	flag.StringVar(&cfg.InfluxURL, "influx-url", "", "InfluxDB server URL (e.g., http://localhost:8086) (required)")
+	flag.BoolVar(&cfg.InfluxUseGZip, "influx-gzip", true, "InfluxDB client gzip compression flag")
 	flag.StringVar(&cfg.InfluxToken, "influx-token", "ftdc", "InfluxDB authentication token")
 	flag.StringVar(&cfg.InfluxOrg, "influx-org", "my-org", "InfluxDB organization")
 	flag.StringVar(&cfg.InfluxBucket, "influx-bucket", "my-bucket", "InfluxDB bucket name")
 	flag.IntVar(&cfg.Parallel, "parallel", 4, "Number of files to process in parallel")
-	flag.IntVar(&cfg.BatchSize, "batch-size", 500, "Number of FTDC metrics per batch")
-	flag.IntVar(&cfg.BatchBuffer, "batch-buffer", 3, "Number of batches to queue before blocking")
+	flag.IntVar(&cfg.BatchSize, "batch-size", 1000, "Number of FTDC metrics per batch")
+	flag.IntVar(&cfg.BatchBuffer, "batch-buffer", 1, "Number of batches to queue before blocking")
 	flag.StringVar(&cfg.MetricsIncludeFile, "metrics-include-file", "", "Number of batches to queue before blocking")
 	flag.BoolVar(&cfg.Debug, "debug", false, "Enable debug logging")
 
@@ -51,6 +53,7 @@ func (cfg *Config) Print() {
 	fmt.Printf("%-20s : %s\n", "Input Directory", cfg.InputDir)
 	fmt.Printf("%-20s : %s\n", "Metrics filter list", cfg.MetricsIncludeFile)
 	fmt.Printf("%-20s : %s\n", "Influx URL", cfg.InfluxURL)
+	fmt.Printf("%-20s : %t\n", "Influx Gzip", cfg.InfluxUseGZip)
 	fmt.Printf("%-20s : %s\n", "Influx Token", cfg.InfluxToken)
 	fmt.Printf("%-20s : %s\n", "Influx Org", cfg.InfluxOrg)
 	fmt.Printf("%-20s : %s\n", "Influx Bucket", cfg.InfluxBucket)

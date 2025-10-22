@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/jodevsa/ftdc"
 	"os"
 	"strings"
 )
@@ -25,11 +24,11 @@ func streamFTDCMetricsInBatches(ctx context.Context, path string, metricsInclude
 	}
 
 	scanner := bufio.NewScanner(metricsIncludeFile)
-	var includePatterns []string
+	includePatterns := make(map[string]struct{})
 	for scanner.Scan() {
 		line := strings.TrimSpace(scanner.Text())
 		if line != "" {
-			includePatterns = append(includePatterns, line)
+			includePatterns[line] = struct{}{}
 		}
 	}
 
@@ -38,30 +37,13 @@ func streamFTDCMetricsInBatches(ctx context.Context, path string, metricsInclude
 
 	iter := readFTDCData(ctx, file)
 
-	file2, err := os.Open(path)
-	if err != nil {
-		fmt.Errorf("couldn't open BSON file: %v", err)
-
-	}
-	defer file2.Close()
-	cs := ftdc.ReadChunks(ctx, file2)
-	metadata := make(map[string]interface{})
-	for cs.Next() {
-		md := cs.Chunk().GetMetadata()
-		if md != nil {
-			metadata = normalizeDocument(md, []string{})
-			break
-		}
-	}
-
 	go func() {
 		defer close(out)
 		defer close(errc)
 
 		for {
 			sb := StreamBatch{
-				Items:    make([]map[string]interface{}, 0, batchSize),
-				Metadata: metadata,
+				Items: make([]map[string]interface{}, 0, batchSize),
 			}
 
 			for i := 0; i < batchSize; i++ {
