@@ -3,9 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/influxdata/influxdb-client-go/v2"
-	"github.com/influxdata/influxdb-client-go/v2/api/write"
 	"github.com/yourusername/my-ftdc-tool/ftdc"
+	"github.com/yourusername/my-ftdc-tool/influx"
 	"github.com/yourusername/my-ftdc-tool/internal/config"
 	"github.com/yourusername/my-ftdc-tool/internal/logging"
 	"golang.org/x/sync/errgroup"
@@ -17,30 +16,19 @@ import (
 	"time"
 )
 
-func getFTDCFileInfluxTags(ctx context.Context, path string) (map[string]string, error) {
-	metadata, err := ftdc.ReadMetadata(ctx, path)
-
-	if err != nil {
-		return map[string]string{}, err
-	}
-
-	hostname := metadata["doc"].(map[string]interface{})["hostInfo"].(map[string]interface{})["system"].(map[string]interface{})["hostname"].(string)
-	version := metadata["doc"].(map[string]interface{})["buildInfo"].(map[string]interface{})["version"].(string)
-
-	return map[string]string{
-		"hostname": hostname,
-		"version":  version,
-	}, nil
-}
-
 func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic.Int64) error {
-	client := influxdb2.NewClientWithOptions(cfg.InfluxURL, cfg.InfluxToken, influxdb2.DefaultOptions().SetUseGZip(cfg.InfluxUseGZip).SetPrecision(time.Second).SetMaxRetries(5).SetMaxRetryInterval(10000))
+	ctx := context.Background()
+	client := influx.NewClient(ctx, influx.Config{
+		Org:         cfg.InfluxOrg,
+		Bucket:      cfg.InfluxBucket,
+		Url:         cfg.InfluxURL,
+		Token:       cfg.InfluxToken,
+		UseGzip:     cfg.InfluxUseGZip,
+		Measurement: cfg.InfluxMeasurement,
+	})
 	defer client.Close()
 
-	w := client.WriteAPIBlocking(cfg.InfluxOrg, cfg.InfluxBucket)
-	ctx := context.Background()
-
-	tags, err := getFTDCFileInfluxTags(ctx, absInputPath)
+	tags, err := ftdc.GetTags(ctx, absInputPath)
 	if err != nil {
 		return err
 	}
@@ -50,14 +38,13 @@ func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic
 
 	logging.Info("Processing: %s", absInputPath)
 	for batch := range batches {
-		points := []*write.Point{}
-
+		var points []*influx.Point
 		for _, doc := range batch.Items {
 			t := time.UnixMilli(doc["start"].(int64))
-			points = append(points, influxdb2.NewPoint("ftdc", tags, doc, t))
+			points = append(points, client.NewPoint(tags, doc, t))
 		}
 
-		if err := w.WritePoint(context.Background(), points...); err != nil {
+		if err := client.WritePoint(points...); err != nil {
 			return err
 		}
 

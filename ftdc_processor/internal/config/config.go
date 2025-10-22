@@ -20,6 +20,7 @@ type Config struct {
 	BatchSize          int
 	BatchBuffer        int
 	Debug              bool
+	InfluxMeasurement  string
 }
 
 // ParseFlags reads and validates CLI flags, returning a Config instance.
@@ -31,6 +32,7 @@ func ParseFlags() *Config {
 	flag.BoolVar(&cfg.InfluxUseGZip, "influx-gzip", true, "InfluxDB client gzip compression flag")
 	flag.StringVar(&cfg.InfluxToken, "influx-token", "ftdc", "InfluxDB authentication token")
 	flag.StringVar(&cfg.InfluxOrg, "influx-org", "my-org", "InfluxDB organization")
+	flag.StringVar(&cfg.InfluxMeasurement, "influx-measurement", "ftdc", "InfluxDB measurement")
 	flag.StringVar(&cfg.InfluxBucket, "influx-bucket", "my-bucket", "InfluxDB bucket name")
 	flag.IntVar(&cfg.Parallel, "parallel", 4, "Number of files to process in parallel")
 	flag.IntVar(&cfg.BatchSize, "batch-size", 1000, "Number of FTDC metrics per batch")
