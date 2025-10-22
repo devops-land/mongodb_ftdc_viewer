@@ -5,13 +5,17 @@
 export PARALLEL=10
 export BATCH_SIZE=200
 export INFLUX_DB_DATA_DIRECTORY=/tmp/influxdb_data
+export INFLUX_ADMIN_PASSWORD="$(uuidgen)"
+export INFLUX_API_TOKEN="$(uuidgen)"
+export GRAFANA_ADMIN_PASSWORD="$(uuidgen)"
+export INFLUX_ORG="org"
+export INFLUX_BUCKET="ftdc"
 
 # --- Parse CLI args ---
 while [[ "$#" -gt 0 ]]; do
   case "$1" in
     --input-dir) export INPUT_DIR="$2"; shift 2 ;;
     --influx-url) export INFLUX_URL="$2"; shift 2 ;;
-    --influx-token) export INFLUX_TOKEN="$2"; shift 2 ;;
     --influx-org) export INFLUX_ORG="$2"; shift 2 ;;
     --influx-bucket) export INFLUX_BUCKET="$2"; shift 2 ;;
     --parallel) export PARALLEL="$2"; shift 2 ;;
@@ -78,9 +82,22 @@ trap cleanup SIGINT
 echo "Checking for image changes and building if needed..."
 docker-compose build
 
+# remove any running container
+docker-compose down
 
 # Start Docker containers in detached mode
 docker-compose up -d
+
+echo "🔐 Credentials:"
+echo "--------------------------"
+echo "Influx URL               = http://localhost:8086/"
+echo "Influx UI User           = admin"
+echo "Influx UI Password       = $INFLUX_ADMIN_PASSWORD"
+echo "Influx API Token         = $INFLUX_API_TOKEN"
+echo "Grafana Dashboard URL    = http://localhost:3001/d/ddnw277huiv40ae/ftdc-dashboard"
+echo "Grafana user             = admin"
+echo "Grafana Password         = $GRAFANA_ADMIN_PASSWORD"
+
 
 # Tail the logs of the metrics-processor service
 docker attach mongodb_ftdc_viewer-ftdc_exporter-1

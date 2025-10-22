@@ -7,8 +7,8 @@ datasources:
     url: http://influxdb:8086
     jsonData:
       version: Flux
-      organization: my-org
-      defaultBucket: ftdc
+      organization: ${INFLUX_ORG}
+      defaultBucket: ${INFLUX_BUCKET}
       tlsSkipVerify: true
     secureJsonData:
-      token: ftdc
+      token: ${INFLUX_API_TOKEN}
