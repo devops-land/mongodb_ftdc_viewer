@@ -59,6 +59,7 @@ func (cfg *Config) Print() {
 	fmt.Printf("%-20s : %s\n", "Influx Token", cfg.InfluxToken)
 	fmt.Printf("%-20s : %s\n", "Influx Org", cfg.InfluxOrg)
 	fmt.Printf("%-20s : %s\n", "Influx Bucket", cfg.InfluxBucket)
+	fmt.Printf("%-20s : %s\n", "Influx Measurement", cfg.InfluxMeasurement)
 	fmt.Printf("%-20s : %d\n", "Parallel Files", cfg.Parallel)
 	fmt.Printf("%-20s : %d\n", "Batch Size", cfg.BatchSize)
 	fmt.Printf("%-20s : %d\n", "Batch Buffer", cfg.BatchBuffer)

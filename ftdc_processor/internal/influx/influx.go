@@ -12,5 +12,6 @@ func NewClient(ctx context.Context, cfg Config) Client {
 		ctx:    ctx,
 		client: client,
 		api:    client.WriteAPIBlocking(cfg.Org, cfg.Bucket),
+		config: cfg,
 	}
 }
