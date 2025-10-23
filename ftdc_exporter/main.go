@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"github.com/yourusername/my-ftdc-tool/ftdc"
 	"github.com/yourusername/my-ftdc-tool/internal/config"
@@ -142,13 +143,23 @@ func main() {
 
 	logging.Info("%d files queued for processing", len(files))
 	for _, f := range files {
+		// copy f as local
+		f := f
 		g.Go(func() error {
 			select {
 			case <-ctx.Done():
 				return ctx.Err()
 			default:
-				return ingestFTDCFromFile(filepath.Clean(f), cfg, &processed)
+				if err := ingestFTDCFromFile(filepath.Clean(f), cfg, &processed); err != nil {
+					if errors.Is(err, ftdc.ErrInvalidFormat) {
+						logging.Info("failed to ingest file %s: %v", f, err)
+						return nil
+					} else {
+						return err
+					}
+				}
 			}
+			return nil
 		})
 	}
 

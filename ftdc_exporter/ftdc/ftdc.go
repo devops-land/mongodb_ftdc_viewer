@@ -16,7 +16,11 @@ func ReadMetadata(ctx context.Context, path string) (map[string]interface{}, err
 func GetTags(ctx context.Context, path string) (map[string]string, error) {
 	metadata, err := ReadMetadata(ctx, path)
 	if err != nil {
-		return map[string]string{}, err
+		return map[string]string{}, ErrInvalidFormat
+	}
+
+	if metadata == nil || metadata["doc"] == nil {
+		return map[string]string{}, ErrInvalidFormat
 	}
 
 	hostname := metadata["doc"].(map[string]interface{})["hostInfo"].(map[string]interface{})["system"].(map[string]interface{})["hostname"].(string)

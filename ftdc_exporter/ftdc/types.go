@@ -2,6 +2,7 @@ package ftdc
 
 import (
 	"context"
+	"errors"
 	"github.com/evergreen-ci/birch"
 	"github.com/mongodb/ftdc"
 )
@@ -16,3 +17,5 @@ type FTDCDataIterator struct {
 type StreamBatch struct {
 	Items []map[string]interface{}
 }
+
+var ErrInvalidFormat = errors.New("invalid ftdc format")
