@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Copy go.mod and go.sum files first to leverage Docker cache
 COPY . .
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o ftdc_exporter .
+RUN CGO_ENABLED=0 GOOS=linux go build -o ftdc_exporter .
 
 # end of building ftdc_exporter
 
