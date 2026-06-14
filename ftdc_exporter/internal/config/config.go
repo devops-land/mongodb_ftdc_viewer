@@ -38,7 +38,7 @@ func ParseFlags() *Config {
 	flag.IntVar(&cfg.Parallel, "parallel", 4, "Number of files to process in parallel")
 	flag.IntVar(&cfg.BatchSize, "batch-size", 1000, "Number of FTDC metrics per batch")
 	flag.IntVar(&cfg.BatchBuffer, "batch-buffer", 1, "Number of batches to queue before blocking")
-	flag.StringVar(&cfg.MetricsIncludeFile, "metrics-include-file", "", "Number of batches to queue before blocking")
+	flag.StringVar(&cfg.MetricsIncludeFile, "metrics-include-file", "", "Path to a file listing metric keys to include (one per line); if empty, all metrics are included")
 	flag.BoolVar(&cfg.Debug, "debug", false, "Enable debug logging")
 	flag.BoolVar(&cfg.WaitForever, "wait-forever", true, "Wait indefinitely")
 

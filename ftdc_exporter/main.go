@@ -21,7 +21,7 @@ import (
 	"time"
 )
 
-func buildGrafanaURL(ctx context.Context, cfg *config.Config) (error, string) {
+func buildGrafanaURL(ctx context.Context, cfg *config.Config) (string, error) {
 	client := influx.NewClient(ctx, influx.Config{
 		Org:         cfg.InfluxOrg,
 		Bucket:      cfg.InfluxBucket,
@@ -33,15 +33,15 @@ func buildGrafanaURL(ctx context.Context, cfg *config.Config) (error, string) {
 	defer client.Close()
 	err, earliest := client.FetchEarliestTimestamp()
 	if err != nil {
-		return err, ""
+		return "", err
 	}
 
 	err, latest := client.FetchLatestTimestamp()
 	if err != nil {
-		return err, ""
+		return "", err
 	}
 	baseURL := "http://localhost:3001/d/ddnw277huiv40ae/ftdc-dashboard"
-	return nil, fmt.Sprintf("%s?from=%s&to=%s&timezone=UTC", baseURL, earliest, latest)
+	return fmt.Sprintf("%s?from=%s&to=%s&timezone=UTC", baseURL, earliest, latest), nil
 }
 
 func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic.Int64) error {
@@ -97,6 +97,7 @@ func main() {
 
 	var processed atomic.Int64
 
+	logging.Info("Waiting for InfluxDB to become ready...")
 	time.Sleep(5 * time.Second)
 
 	done := make(chan struct{})
@@ -106,9 +107,9 @@ func main() {
 		for {
 			select {
 			case <-ticker.C:
-				duration := time.Duration(processed.Load()) * time.Second
+				count := processed.Load()
 				timestamp := time.Now().Format("15:04:05")
-				fmt.Printf("\r[%s] Ingested %-15s of diagnostics metrics", timestamp, duration)
+				fmt.Printf("\r[%s] Ingested %-10d data points", timestamp, count)
 			case <-done:
 				return
 			}
@@ -170,7 +171,7 @@ func main() {
 	// stop the periodic log updates
 	close(done)
 
-	err, grafanaUrl := buildGrafanaURL(ctx, cfg)
+	grafanaUrl, err := buildGrafanaURL(ctx, cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
