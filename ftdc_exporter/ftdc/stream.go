@@ -9,18 +9,25 @@ import (
 )
 
 func streamFTDCMetricsInBatches(ctx context.Context, path string, metricsIncludeFilePath string, batchSize, buffer int) (<-chan StreamBatch, <-chan error) {
-	metricsIncludeFile, err := os.Open(metricsIncludeFilePath)
-	if err != nil {
-		fmt.Errorf("couldn't open BSON file: %v", err)
+	out := make(chan StreamBatch, buffer)
+	errc := make(chan error, 1)
 
+	sendErr := func(err error) (<-chan StreamBatch, <-chan error) {
+		errc <- err
+		close(out)
+		close(errc)
+		return out, errc
 	}
 
+	metricsIncludeFile, err := os.Open(metricsIncludeFilePath)
+	if err != nil {
+		return sendErr(fmt.Errorf("couldn't open metrics include file %q: %w", metricsIncludeFilePath, err))
+	}
 	defer metricsIncludeFile.Close()
 
 	file, err := os.Open(path)
 	if err != nil {
-		fmt.Errorf("couldn't open BSON file: %v", err)
-
+		return sendErr(fmt.Errorf("couldn't open FTDC file %q: %w", path, err))
 	}
 
 	scanner := bufio.NewScanner(metricsIncludeFile)
@@ -31,9 +38,6 @@ func streamFTDCMetricsInBatches(ctx context.Context, path string, metricsInclude
 			includePatterns[line] = struct{}{}
 		}
 	}
-
-	out := make(chan StreamBatch, buffer)
-	errc := make(chan error, 1)
 
 	iter := readFTDCData(ctx, file)
 
