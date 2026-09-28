@@ -35,6 +35,9 @@ serverStatus.flowControl.targetRateLimit
 serverStatus.wiredTiger.block-manager.bytes read
 serverStatus.wiredTiger.block-manager.bytes written
 serverStatus.wiredTiger.block-manager.bytes written for checkpoint
+serverStatus.wiredTiger.log.log bytes written
+serverStatus.wiredTiger.transaction.transaction checkpoint most recent time (msecs)
+serverStatus.wiredTiger.checkpoint.most recent time (msecs)
 serverStatus.wiredTiger.cache.bytes currently in the cache
 serverStatus.wiredTiger.cache.maximum bytes configured
 serverStatus.wiredTiger.cache.modified pages evicted
@@ -45,6 +48,15 @@ serverStatus.wiredTiger.cache.unmodified pages evicted
 serverStatus.wiredTiger.data-handle.connection data handles currently active
 serverStatus.wiredTiger.concurrentTransactions.read.available
 serverStatus.wiredTiger.concurrentTransactions.write.available
+serverStatus.wiredTiger.concurrentTransactions.monitor.available
+serverStatus.wiredTiger.concurrentTransactions.monitor.totalTickets
+serverStatus.wiredTiger.concurrentTransactions.monitor.queueLength
+serverStatus.queues.execution.read.available
+serverStatus.queues.execution.read.totalTickets
+serverStatus.queues.execution.read.normalPriority.queueLength
+serverStatus.queues.execution.write.available
+serverStatus.queues.execution.write.totalTickets
+serverStatus.queues.execution.write.normalPriority.queueLength
 serverStatus.flowControl.enabled
 serverStatus.flowControl.isLagged
 serverStatus.flowControl.isLaggedCount
@@ -138,3 +150,13 @@ replSetGetStatus.members.1.lastAppliedWallTime
 replSetGetStatus.members.2.lastAppliedWallTime
 replSetGetStatus.members.3.lastAppliedWallTime
 replSetGetStatus.members.4.lastAppliedWallTime
+replSetGetStatus.members.0.state
+replSetGetStatus.members.1.state
+replSetGetStatus.members.2.state
+replSetGetStatus.members.3.state
+replSetGetStatus.members.4.state
+replSetGetStatus.members.0.name
+replSetGetStatus.members.1.name
+replSetGetStatus.members.2.name
+replSetGetStatus.members.3.name
+replSetGetStatus.members.4.name

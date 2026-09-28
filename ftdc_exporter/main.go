@@ -31,17 +31,28 @@ func buildGrafanaURL(ctx context.Context, cfg *config.Config) (error, string) {
 		Measurement: cfg.InfluxMeasurement,
 	})
 	defer client.Close()
-	err, earliest := client.FetchEarliestTimestamp()
+	err, earliestStr := client.FetchEarliestTimestamp()
 	if err != nil {
 		return err, ""
 	}
 
-	err, latest := client.FetchLatestTimestamp()
+	err, latestStr := client.FetchLatestTimestamp()
 	if err != nil {
 		return err, ""
 	}
-	baseURL := "http://localhost:3001/d/ddnw277huiv40ae/ftdc-dashboard"
-	return nil, fmt.Sprintf("%s?from=%s&to=%s&timezone=UTC", baseURL, earliest, latest)
+
+	earliest, err := parseGrafanaTimestamp(earliestStr)
+	if err != nil {
+		return err, ""
+	}
+	latest, err := parseGrafanaTimestamp(latestStr)
+	if err != nil {
+		return err, ""
+	}
+
+	// Open the last 48h of ingested data (relative to the newest sample), not
+	// the full FTDC span — wide ranges with many hosts can OOM InfluxDB.
+	return nil, formatGrafanaDashboardURL(earliest, latest)
 }
 
 func ingestFTDCFromFile(absInputPath string, cfg *config.Config, counter *atomic.Int64) error {

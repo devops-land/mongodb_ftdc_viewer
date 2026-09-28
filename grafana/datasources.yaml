@@ -10,5 +10,6 @@ datasources:
       organization: ${INFLUX_ORG}
       defaultBucket: ${INFLUX_BUCKET}
       tlsSkipVerify: true
+      timeout: 60
     secureJsonData:
       token: ${INFLUX_API_TOKEN}

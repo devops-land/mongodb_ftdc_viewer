@@ -4,5 +4,9 @@ providers:
   - name: "ftdc"
     orgId: 1
     type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: false
     options:
       path: /etc/grafana/provisioning/dashboards/
+      foldersFromFilesStructure: false

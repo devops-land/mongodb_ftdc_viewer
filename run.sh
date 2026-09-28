@@ -70,7 +70,7 @@ esac
 # Function to handle Ctrl-C (SIGINT)
 cleanup() {
     echo "Stopping Docker containers..."
-    $ENVS docker-compose down -v
+    $ENVS docker compose down -v
     echo "Docker containers stopped."
     exit 0
 }
@@ -80,13 +80,13 @@ trap cleanup SIGINT
 
 
 echo "Checking for image changes and building if needed..."
-docker-compose build
+docker compose build
 
 # remove any running container
-docker-compose down -v
+docker compose down -v
 
 # Start Docker containers in detached mode
-docker-compose up -d
+docker compose up -d
 
 echo "🔐 Credentials:"
 echo "--------------------------"

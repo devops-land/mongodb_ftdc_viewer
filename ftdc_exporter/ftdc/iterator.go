@@ -1,7 +1,7 @@
 package ftdc
 
 func (it *FTDCDataIterator) NormalisedDocument(includedPatterns map[string]struct{}) map[string]interface{} {
-	return normalizeDocument(it.doc, includedPatterns)
+	return normalizeMetricsDocument(it.doc, includedPatterns)
 }
 
 func (it *FTDCDataIterator) Close() {

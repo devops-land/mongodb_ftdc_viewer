@@ -4,3 +4,9 @@ diagnostic.data/
 .DS_Store
 influxdb_data/
 ./ftdc_exporter/vendor
+.cursor/
+mongodb_ftdc_decoder/
+grafana/backups/
+grafana/DASHBOARD.md
+grafana/dashboards/bkp.json
+grafana/dashboards/my.jsonscripts/
